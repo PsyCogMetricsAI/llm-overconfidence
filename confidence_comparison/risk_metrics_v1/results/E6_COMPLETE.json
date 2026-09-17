@@ -1,0 +1,13 @@
+{
+  "status": "REFERENCE",
+  "identity": {
+    "seal_sha256": "2d26d33529139a5f393c471afb515d099c7a147094cb0c0fca761c10832e9658",
+    "code_release_sha256": "b1baf50b146a6d61b399ee0e2cf7704be42ab4e9c90c4372b1c7cc3b436ef1d8"
+  },
+  "files": {
+    "results/PRIMARY_RESULTS.json": "b0cd634216692072347d49cecb54b832192cfefe97bafea1fd6d83a92ebdf1fc",
+    "results/SECONDARY_RESULTS.json": "624a901eb6d407446bc5d01209ca60a73515be0f98179bfbe84263ce598c3bfb",
+    "results/effect_matrix.csv": "99102080c0adae6bb61eba9f5d86bcbe8907d76aacbf606eeec99d58f8d370ed",
+    "results/selection_results.json": "f056dcaaf4423564e2acbdcc0fdee8e8cf98d6d0d2c8d85e4f66febecfacfb9c"
+  }
+}

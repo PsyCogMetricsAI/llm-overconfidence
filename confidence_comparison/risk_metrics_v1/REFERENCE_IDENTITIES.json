@@ -1,0 +1,14 @@
+{
+  "scope": "Reference output identities; aggregate costs retained, execution events omitted.",
+  "files": {
+    "CANDIDATE_MATRIX.csv": "af7b357351f7c29bd5e7d7070d7a6c65547893086f6d5c7ff2e7184ad276b022",
+    "evaluation_cohort.csv": "2bcb9324a918ce871ec85ff4af6f8a54c2e7bb77c5dc644edd04eeb5d2410e9b",
+    "features/source_quality.json": "52894f946c342b576a7ef95593ae1db7ca5464b7739bb7c4b77e7aaea5256e4f",
+    "results/PRIMARY_RESULTS.json": "b0cd634216692072347d49cecb54b832192cfefe97bafea1fd6d83a92ebdf1fc",
+    "results/SECONDARY_RESULTS.json": "624a901eb6d407446bc5d01209ca60a73515be0f98179bfbe84263ce598c3bfb",
+    "results/selection_results.json": "f056dcaaf4423564e2acbdcc0fdee8e8cf98d6d0d2c8d85e4f66febecfacfb9c",
+    "results/cost_report.json": "c3bd08280ce621a32697a8b7e0550212c9f86b7fb7bca46e0138686b296d5cd8",
+    "cost/warm_per_model.csv": "315ef062fa0f591b0f4efa99e94b5fb5ecfa5d2400c0cb13bcce80caf10c5b56",
+    "cost/warm_summary.json": "be4d28b479a197ca8b2130c133b608942f82192b9bcc6accf42a957259b82856"
+  }
+}

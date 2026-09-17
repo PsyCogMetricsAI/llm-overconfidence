@@ -1,0 +1,14 @@
+{
+  "context": "CV2_source_qualification",
+  "n_models": 6701,
+  "n_orgs": 1330,
+  "outer_train_org_counts": {
+    "0": 1062,
+    "1": 1064,
+    "2": 1064,
+    "3": 1058,
+    "4": 1064
+  },
+  "sample_sufficient": true,
+  "reasons": []
+}

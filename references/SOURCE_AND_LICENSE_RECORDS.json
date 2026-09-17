@@ -1,0 +1,170 @@
+[
+  {
+    "key": "xiong2024",
+    "title": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "year": "2024",
+    "source": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6733cf15e10e2cd1d59af033c3bb8507-Abstract-Conference.html",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "steyvers2025",
+    "title": "What large language models know and what people think they know",
+    "year": "2025",
+    "source": "https://doi.org/10.1038/s42256-024-00976-7",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "vashurin2025",
+    "title": "Benchmarking Uncertainty Quantification Methods for Large Language Models with LM-Polygraph",
+    "year": "2025",
+    "source": "https://aclanthology.org/2025.tacl-1.11/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "stankov2008",
+    "title": "Confidence and Cognitive Test Performance",
+    "year": "2008",
+    "source": "https://doi.org/10.1037/a0012546",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "groot2024",
+    "title": "Overconfidence is Key: Verbalized Uncertainty Evaluation in Large Language and Vision-Language Models",
+    "year": "2024",
+    "source": "https://aclanthology.org/2024.trustnlp-1.13/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "yang2026extension",
+    "title": "When Calibration Rankings Reverse: Accuracy-Controlled Evaluation for Fair Comparison of LLMs",
+    "year": "2026",
+    "source": "https://arxiv.org/abs/2606.30814v2",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "mao2026",
+    "title": "Confidence over Time: Confidence Calibration with Temporal Logic for Large Language Model Reasoning",
+    "year": "2026",
+    "source": "https://aclanthology.org/2026.findings-acl.484/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "cacioli2026concurrent",
+    "title": "Concurrent Criterion Validation of a Validity Screen for LLM Confidence Signals via Selective Prediction",
+    "year": "2026",
+    "source": "https://arxiv.org/abs/2604.17716v1",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "moore2008",
+    "title": "The Trouble With Overconfidence",
+    "year": "2008",
+    "source": "https://doi.org/10.1037/0033-295X.115.2.502",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "cash2026",
+    "title": "Quantifying uncert-AI-nty: Testing the accuracy of LLMs' confidence judgments",
+    "year": "2026",
+    "source": "https://doi.org/10.3758/s13421-025-01755-4",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "guo2017",
+    "title": "On Calibration of Modern Neural Networks",
+    "year": "2017",
+    "source": "https://arxiv.org/abs/1706.04599",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "brier1950",
+    "title": "Verification of Forecasts Expressed in Terms of Probability",
+    "year": "1950",
+    "source": "https://doi.org/10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "paek2008",
+    "title": "A Study of Confidence and Accuracy Using the Rasch Modeling Procedures",
+    "year": "2008",
+    "source": "https://doi.org/10.1002/j.2333-8504.2008.tb02128.x",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "saySelf2024",
+    "title": "SaySelf: Teaching LLMs to Express Confidence with Self-Reflective Rationales",
+    "year": "2024",
+    "source": "https://aclanthology.org/2024.emnlp-main.343/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "farquhar2024",
+    "title": "Detecting hallucinations in large language models using semantic entropy",
+    "year": "2024",
+    "source": "https://doi.org/10.1038/s41586-024-07421-0",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "geifman2017",
+    "title": "Selective Classification for Deep Neural Networks",
+    "year": "2017",
+    "source": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/4a8423d5e91fda00bb7e46540e2b0cf1-Abstract.html",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "ferrando2019extension",
+    "title": "A Comprehensive IRT Approach for Modeling Binary, Graded, and Continuous Responses With Error in Persons and Items",
+    "year": "2019",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/31235981/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "llmnrm2026extension",
+    "title": "Every Wrong Answer Counts: Option-Level Psychometrics for LLM Multiple-Choice Benchmarks",
+    "year": "2026",
+    "source": "https://arxiv.org/abs/2608.02966v1",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "clark2018arc",
+    "title": "Think You Have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge",
+    "year": "2018",
+    "source": "https://arxiv.org/abs/1803.05457",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "zellers-etal-2019-hellaswag",
+    "title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+    "year": "2019",
+    "source": "https://aclanthology.org/P19-1472/",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  },
+  {
+    "key": "leaderboardarchive",
+    "title": "Open LLM Leaderboard (2023--2024)",
+    "year": "2023",
+    "source": "https://huggingface.co/spaces/open-llm-leaderboard-old/open_llm_leaderboard",
+    "public_pdf": "not bundled",
+    "rights": "Third-party publications retain their own terms; bibliography inclusion grants no redistribution rights."
+  }
+]

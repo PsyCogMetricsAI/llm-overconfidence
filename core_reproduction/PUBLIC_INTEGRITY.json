@@ -1,0 +1,22 @@
+{
+  "scope": "Public runtime and scientific input identities. No historical acceptance asserted.",
+  "driver_sha256": "fdcb324747b290a33063948e1887252cf1260efbb7446b17e9b3b1bef1bb5b64",
+  "public_files": {
+    "array_identity.py": "bd4cafad54f05b15e3a079e79c2bd7ddc2c041afaf88b15775f818bec370ccdc",
+    "PROTOCOL.md": "3fe80a1018bb1f245dd8e42b53f003a2adef6a40f35989c7242e32e441c6e368",
+    "INPUT_HASHES.json": "b9c1470ab8418aadcbddc05438f557afc489efa3b5190f46183bc69a40b4f855"
+  },
+  "corrected_files": {
+    "corrected_mode.py": "0d6f6b1fd08e5c6f92f38ed8880ec9c48ba8f1e6b9dc5ec463719012288d5cc5",
+    "corrected_inputs/corrected_core_contracts.py": "7354a3923676a0d8209b9a70b4707677f68e651a3f46519a8c6c636697662b73",
+    "corrected_inputs/FROZEN_CANDIDATE_AXES.npz": "be33458b825ea7698e180fc4d702da2586afbd5208d614d93490303808e5bc68",
+    "corrected_inputs/CORRECTED_RAW_IDENTITIES.json.gz": "9882d6b192e5b7fde6508b537ba2981dfe6695ce9c6d3b46f91a1ce3fdc8cfb1",
+    "corrected_inputs/CORRECTED_CORE_ARRAYS.identity.json": "684c8f9fa8386ba1875ac571ab7407d639a5c400e4ed46d3dbb8e6aac08d4748"
+  },
+  "source_verifier_files": {
+    "corrected_inputs/CORRECTED_FEATURE_IDENTITIES.json": "8db1fcf26ac2008454c1cea78eca5748553df928741a9c98a676660c29eb25b1",
+    "../independent_verification/csv_digest.py": "a69945289948e5040bc530c0d88d095072609785ef87c56243d9c00ac5d750aa"
+  },
+  "result_verifier_adapter_sha256": "f49598357e6775f237d9461872e80c8484c450574fba590582af0789e3a43ce7",
+  "cost_scope_adapter_sha256": "d3e85df489dfa53a78cabdd7b9e011a4fc4c26732a97485cc33a545b4094c377"
+}

@@ -1,0 +1,141 @@
+{
+  "plan_sha256": "3fe80a1018bb1f245dd8e42b53f003a2adef6a40f35989c7242e32e441c6e368",
+  "metric_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "D1",
+    "D2",
+    "D3",
+    "D4"
+  ],
+  "entries": [
+    {
+      "id": "A1",
+      "formula": "\\(\\displaystyle Z_{A1}=\\frac{\\sum_{i:y_i=1}\\sum_{j:y_j=0}[\\mathbf1(c_i>c_j)+\\tfrac12\\mathbf1(c_i=c_j)]}{N_1N_0}\\)",
+      "boundary_and_meaning": "N_a为y=a的题数；任一类0题→SINGLE_CLASS缺失；计算可用等价排序算法，ties半分；正确回答的置信AUROC"
+    },
+    {
+      "id": "A2",
+      "formula": "\\(\\displaystyle Z_{A2}=\\frac1N\\sum_{k=1}^N\\frac1k\\sum_{j=1}^k e_{\\pi_j}\\)",
+      "boundary_and_meaning": "离散AURC；N>0；按已固定pi，0覆盖点不加入"
+    },
+    {
+      "id": "A3",
+      "formula": "\\(\\displaystyle Z_{A3}=\\sum_{b=0}^9\\frac{n_b}{N}(\\bar y_b-A)^2\\)",
+      "boundary_and_meaning": "固定十箱正确性分辨率，n_b=#\\{i:t_i=b\\}；不称与现有多类Brier构成精确分解"
+    },
+    {
+      "id": "A4",
+      "formula": "\\(Z_{A4}=R(0.10)\\)",
+      "boundary_and_meaning": "源最高置信十分之一错误率，ceil规则固定"
+    },
+    {
+      "id": "A5",
+      "formula": "\\(Z_{A5}=R(0.25)\\)",
+      "boundary_and_meaning": "源最高置信四分之一错误率"
+    },
+    {
+      "id": "B1",
+      "formula": "\\(Z_{B1}=\\langle\\operatorname{LSE}_{k\\in K_i}u_{ik}-u_{ig_i}\\rangle\\)",
+      "boundary_and_meaning": "多类NLL；不clip概率，不直接log下溢后的p"
+    },
+    {
+      "id": "B2",
+      "formula": "\\(Z_{B2}=\\langle e_i c_i\\rangle\\)",
+      "boundary_and_meaning": "错误置信一阶矩；全对时为0，不除错误数"
+    },
+    {
+      "id": "B3",
+      "formula": "\\(Z_{B3}=\\langle e_i c_i^2\\rangle\\)",
+      "boundary_and_meaning": "错误置信二阶矩；全对时为0"
+    },
+    {
+      "id": "B4",
+      "formula": "\\(Z_{B4}=\\langle z_i\\rangle\\)",
+      "boundary_and_meaning": "错误选项超过正确选项的平均对数分数差"
+    },
+    {
+      "id": "B5",
+      "formula": "\\(\\displaystyle Z_{B5}=\\frac1k\\sum_{j=1}^{k}z_{[j]},\\ k=\\lceil0.10N\\rceil\\)",
+      "boundary_and_meaning": "全N题的固定上尾，错误少于k时包含0；不改为仅错误集的10%"
+    },
+    {
+      "id": "B6",
+      "formula": "\\(\\displaystyle Z_{B6}=\\left\\langle\\frac{\\operatorname{rank}_i(g_i)-1}{|K_i|-1}\\right\\rangle\\)",
+      "boundary_and_meaning": "选项按u降序、原索引升序排列，rank从1开始；不能用已下溢的p引入假并列"
+    },
+    {
+      "id": "B7",
+      "formula": "\\(\\displaystyle Z_{B7}=\\left\\langle-\\frac{\\sum_{k\\ne\\hat k_i}q_{ik}\\log q_{ik}}{\\log(|K_i|-1)}\\right\\rangle\\)",
+      "boundary_and_meaning": "\\(q_{ik}=\\operatorname{softmax}_{k\\ne\\hat k_i}(u_i)\\)；|K_i|=2时该题项为0；0log0=0；非获胜条件熵"
+    },
+    {
+      "id": "C1",
+      "formula": "\\(Z_{C1}=\\langle w_i^x e_i\\rangle_{S_{mx}}\\)",
+      "boundary_and_meaning": "易题错误量；N_v=0缺失"
+    },
+    {
+      "id": "C2",
+      "formula": "\\(Z_{C2}=\\langle w_i^x e_i c_i\\rangle_{S_{mx}}\\)",
+      "boundary_and_meaning": "易题高置信错误量；N_v=0缺失"
+    },
+    {
+      "id": "C3",
+      "formula": "\\(Z_{C3}=\\langle w_i^x z_i\\rangle_{S_{mx}}\\)",
+      "boundary_and_meaning": "易题错误获胜强度；N_v=0缺失"
+    },
+    {
+      "id": "C4",
+      "formula": "\\(\\displaystyle Z_{C4}=\\sum_{b=1}^4\\frac{n_b}{N_v}(\\bar v_b-\\bar v)^2,\\ v_i=c_i-y_i\\)",
+      "boundary_and_meaning": "S内按w升序、题ID升序排位j=1..N_v，分箱b_j=1+floor(4(j−1)/N_v)；N_v<4缺失；\\(\\bar v\\)也仅取S"
+    },
+    {
+      "id": "D1",
+      "formula": "\\(\\displaystyle Z_{D1}^{(h)}=\\frac{\\sum_{i\\in J}\\max(-r_i,0)^2}{\\sum_{i\\in J}r_i^2}\\)",
+      "boundary_and_meaning": "分母≤1e−12缺失；负侧残差能量比例，不再对r减均值"
+    },
+    {
+      "id": "D2",
+      "formula": "\\(Z_{D2}^{(h)}=M_4/M_2^2-3\\)",
+      "boundary_and_meaning": "M_2≤1e−12缺失；用总体矩，不做小样本无偏修正；不是对M_2²套1e−12阈值"
+    },
+    {
+      "id": "D3",
+      "formula": "\\(Z_{D3}^{(h)}=\\operatorname{Corr}(\\operatorname{rank}_{avg}(|r|),\\operatorname{rank}_{avg}(b))\\)",
+      "boundary_and_meaning": "Spearman；精确ties用平均秩；两个秩变量任一总体方差≤1e−12缺失"
+    },
+    {
+      "id": "D4",
+      "formula": "\\(Z_{D4}^{(h)}=\\operatorname{Corr}(r,b^2)\\)",
+      "boundary_and_meaning": "Pearson；任一变量总体方差≤1e−12缺失；b保持本方向拟合gauge"
+    }
+  ],
+  "math_contract": "逐指标数学合同（唯一执行定义）\n\n### 3.1 观测、有效集、排名与均值\n\n模型m、题i、原选项索引k。真实选项集合K_i至少2个；L_mik为已有loglik，h_mik为原存储的有限正字符长度。仅使用全部真实选项L有限、合法整数gold、选项数/长度/padding一致且ID唯一的题。非法题沿用原valid掩码，不补长度、不把padding当选项、不将缺失当0。使用float64和自然对数。\n\n\\[\nu_{mik}=L_{mik}/h_{mik},\\quad\np_{mik}=\\exp(u_{mik}-\\operatorname{LSE}_{j\\in K_i}u_{mij}),\\quad\n\\hat k_{mi}=\\arg\\max_{k\\in K_i}u_{mik},\n\\]\n\\[\nc_{mi}=p_{mi\\hat k_{mi}},\\qquad y_{mi}=\\mathbf1\\{\\hat k_{mi}=g_i\\},\\qquad e_{mi}=1-y_{mi},\\qquad\n\\ell_{mi}=u_{mig_i}-\\operatorname{LSE}_{k\\ne g_i}u_{mik}.\n\\]\n\nsoftmax用减最大值及归一化的稳定实现；NLL用logsumexp，不对数值下溢后的p取log。argmax的精确并列按原选项索引最小者，y绝不能以ell>0替代。以下省略m；对明确题集S，\\(\\langle f\\rangle_S=|S|^{-1}\\sum_{i\\in S}f_i\\)。A/B默认S为该模型全部有效ARC题I_m，N=|I_m|。所有量使用同一字符归一化尺度。\n\n按float64 c降序、精确并列时canonical题ID字符串升序排成pi；不按四舍五入值排名。\n\\[\nk_q=\\lceil qN\\rceil,\\qquad R(q)=\\frac1{k_q}\\sum_{j=1}^{k_q}e_{\\pi_j}.\n\\]\n令\\(t_i=\\min(\\lfloor10c_i\\rfloor,9)\\in\\{0,\\ldots,9\\}\\)，前9箱左闭右开，最后[.9,1]；空箱在所有加权和中贡献0，不计算空箱均值。A=\\(\\langle y\\rangle\\)。\n\n### 3.2 A组：5个排序/风险统计\n\n| ID | 精确公式 | 计算边界与解释 |\n|---|---|---|\n| A1 | \\(\\displaystyle Z_{A1}=\\frac{\\sum_{i:y_i=1}\\sum_{j:y_j=0}[\\mathbf1(c_i>c_j)+\\tfrac12\\mathbf1(c_i=c_j)]}{N_1N_0}\\) | N_a为y=a的题数；任一类0题→SINGLE_CLASS缺失；计算可用等价排序算法，ties半分；正确回答的置信AUROC |\n| A2 | \\(\\displaystyle Z_{A2}=\\frac1N\\sum_{k=1}^N\\frac1k\\sum_{j=1}^k e_{\\pi_j}\\) | 离散AURC；N>0；按已固定pi，0覆盖点不加入 |\n| A3 | \\(\\displaystyle Z_{A3}=\\sum_{b=0}^9\\frac{n_b}{N}(\\bar y_b-A)^2\\) | 固定十箱正确性分辨率，n_b=#\\{i:t_i=b\\}；不称与现有多类Brier构成精确分解 |\n| A4 | \\(Z_{A4}=R(0.10)\\) | 源最高置信十分之一错误率，ceil规则固定 |\n| A5 | \\(Z_{A5}=R(0.25)\\) | 源最高置信四分之一错误率 |\n\nA1–A3是标准评价量/构件，A4/A5是既有风险定义的覆盖变体，不作为发明申报。给定A，excess-AURC只差oracle项，不重复增加候选。\n\n### 3.3 B组：7个错误强度/选项分布统计\n\n定义\\(z_i=e_i(u_{i\\hat k_i}-u_{ig_i})\\ge0\\)，数学上等于\\(e_i\\log(c_i/p_{ig_i})\\)，实际直接用u差；正确题为0。\\(z_{[j]}\\)按z降序、题ID升序排序。\n\n| ID | 精确公式 | 计算边界与解释 |\n|---|---|---|\n| B1 | \\(Z_{B1}=\\langle\\operatorname{LSE}_{k\\in K_i}u_{ik}-u_{ig_i}\\rangle\\) | 多类NLL；不clip概率，不直接log下溢后的p |\n| B2 | \\(Z_{B2}=\\langle e_i c_i\\rangle\\) | 错误置信一阶矩；全对时为0，不除错误数 |\n| B3 | \\(Z_{B3}=\\langle e_i c_i^2\\rangle\\) | 错误置信二阶矩；全对时为0 |\n| B4 | \\(Z_{B4}=\\langle z_i\\rangle\\) | 错误选项超过正确选项的平均对数分数差 |\n| B5 | \\(\\displaystyle Z_{B5}=\\frac1k\\sum_{j=1}^{k}z_{[j]},\\ k=\\lceil0.10N\\rceil\\) | 全N题的固定上尾，错误少于k时包含0；不改为仅错误集的10% |\n| B6 | \\(\\displaystyle Z_{B6}=\\left\\langle\\frac{\\operatorname{rank}_i(g_i)-1}{|K_i|-1}\\right\\rangle\\) | 选项按u降序、原索引升序排列，rank从1开始；不能用已下溢的p引入假并列 |\n| B7 | \\(\\displaystyle Z_{B7}=\\left\\langle-\\frac{\\sum_{k\\ne\\hat k_i}q_{ik}\\log q_{ik}}{\\log(|K_i|-1)}\\right\\rangle\\) | \\(q_{ik}=\\operatorname{softmax}_{k\\ne\\hat k_i}(u_i)\\)；|K_i|=2时该题项为0；0log0=0；非获胜条件熵 |\n\nB7的q数学上等于p/(1-c)，实现不得直接用可能为0的1-c作分母。B2已与A/C一起决定正误两类的条件置信均值，不重复纳入。答对时u_hat=u_gold，因此z中的e不改变数值，且z=−log(p_gold)+log(c)；保留e仅明确错误解释，不把这一恒等式另列候选。z不是语义伤害/业务损失；B组不预先声称方法新颖。\n\n### 3.4 C组：4个参考容易度交互\n\n对每个原投影上下文x，逐字复用O/split_manifest.json中该context的reference_orgs与scored_orgs；两集合必须不交。R_x为Q0中属于reference_orgs的所有源模型，不能用外测试机构或内验证机构扩充reference，也不能因新的候选缺失改变R_x。令\n\\[\nn_{gi}=\\sum_{r\\in R_x:\\operatorname{org}(r)=g}\\mathbf1\\{i\\in I_r\\},\\quad\nG_i=\\{g:n_{gi}>0\\},\\quad n_i^R=\\sum_{g\\in G_i}n_{gi}.\n\\]\n当n_i^R≥20时，\n\\[\nw_i^x=\\frac1{|G_i|}\\sum_{g\\in G_i}\n\\frac{\\sum_{r\\in R_x:\\operatorname{org}(r)=g,\\ i\\in I_r}y_{ri}+1/2}{n_{gi}+1};\n\\]\n否则w缺失。w是机构等权、Beta(1/2,1/2)平滑后的参考群体经验正确率，不是群体无关的客观题难度。\n\n被评分模型的C题集为\\(S_{mx}=I_m\\cap\\{i:n_i^R\\ge20\\}\\)，N_v=|S_mx|。这不是对全体模型取共同完整题交集。C1–C4均在同一S_mx上计算：\n\n| ID | 精确公式 | 计算边界与解释 |\n|---|---|---|\n| C1 | \\(Z_{C1}=\\langle w_i^x e_i\\rangle_{S_{mx}}\\) | 易题错误量；N_v=0缺失 |\n| C2 | \\(Z_{C2}=\\langle w_i^x e_i c_i\\rangle_{S_{mx}}\\) | 易题高置信错误量；N_v=0缺失 |\n| C3 | \\(Z_{C3}=\\langle w_i^x z_i\\rangle_{S_{mx}}\\) | 易题错误获胜强度；N_v=0缺失 |\n| C4 | \\(\\displaystyle Z_{C4}=\\sum_{b=1}^4\\frac{n_b}{N_v}(\\bar v_b-\\bar v)^2,\\ v_i=c_i-y_i\\) | S内按w升序、题ID升序排位j=1..N_v，分箱b_j=1+floor(4(j−1)/N_v)；N_v<4缺失；\\(\\bar v\\)也仅取S |\n\n没有target参与w、分层或覆盖筛选。源题数量/参考机构数作为审计项，不作为额外连续预测特征。C2/C3为优先解释候选，优先级不改变全部测试清单或判据。\n\n### 3.5 D组：4个双向交叉拟合残差指标\n\n沿用固定源题两半H_0/H_1。对h=0,1分别进行下述过程，拟合题为H_h，评价题为H_(1−h)。\n\n1. 在R_x的拟合半上独立求解\\(\\min_{a_r,s_r,b_i}\\sum_{r,i\\in I_r\\cap H_h}(\\ell_{ri}-a_r+s_rb_i)^2\\)。每题≥20有效reference模型、合格题≥100；reference模型在合格题上少于2个有效值是诊断失败，不能静默剔除。\n2. ALS继承原合同：b初始化为逐题负平均ell的标准化值；交替OLS与题更新；每步原始题向量均值mu/总体标准差sd后，b'=(b−mu)/sd，a'=a−s mu，s'=s sd；与初始化点积负则b、s同时反号。最大改变量<1e−6收敛，至多500次，不换seed/tol；初始化/gauge sd≤1e−12、模型Var(b)≤1e−12、题更新分母Σs²≤1e−20分别按原阈值失败。拟合后在最终b上重算各reference模型OLS a_r、s_r；不能假定旧b缓存包含可直接复用的a/s。\n3. 在评价半，对每题用同一拟合半参数投影：\n\\[\nb_i^{x,h}=\\frac{\\sum_{r\\in R_x:i\\in I_r}s_r(a_r-\\ell_{ri})}\n{\\sum_{r\\in R_x:i\\in I_r}s_r^2}.\n\\]\n有效reference数须≥20、分母>1e−20且结果有限。评价半b保持拟合半gauge，**不能在评价半再定心/标准化**。失败题标缺失。\n4. 对被评分模型m，T=I_m∩H_h∩\\{拟合半b有限\\}，在T上拟合\n\\[\ns_m=-\\frac{\\operatorname{Cov}_T(b,\\ell_m)}{\\operatorname{Var}_T(b)},\\quad\na_m=\\bar\\ell_{m,T}+s_m\\bar b_T,\\quad\n\\sigma_m=\\sqrt{\\langle(\\ell_{mi}-a_m+s_mb_i)^2\\rangle_T}.\n\\]\n协方差/方差均用总体分母|T|。须|T|≥100、Var_T(b)>1e−12、Var_T(ell)>1e−6、s_m>1e−8、sigma_m>1e−8且theta=a/s有限；否则该方向失败。\n5. 评价集J=I_m∩H_(1−h)∩\\{评价半投影b有限\\}，须|J|≥100；只在J上计算\n\\[\nr_i=(\\ell_{mi}-a_m+s_m b_i^{x,h})/\\sigma_m.\n\\]\n不能用评价半重估被评分模型a、s、sigma。若reference求解或模型投影失败，保留原因并将该方向指标标缺失，不降低门槛补救。\n\n每方向定义如下，M_k=\\(\\langle(r-\\bar r)^k\\rangle_J\\)：\n\n| ID | 精确公式 | 计算边界与解释 |\n|---|---|---|\n| D1 | \\(\\displaystyle Z_{D1}^{(h)}=\\frac{\\sum_{i\\in J}\\max(-r_i,0)^2}{\\sum_{i\\in J}r_i^2}\\) | 分母≤1e−12缺失；负侧残差能量比例，不再对r减均值 |\n| D2 | \\(Z_{D2}^{(h)}=M_4/M_2^2-3\\) | M_2≤1e−12缺失；用总体矩，不做小样本无偏修正；不是对M_2²套1e−12阈值 |\n| D3 | \\(Z_{D3}^{(h)}=\\operatorname{Corr}(\\operatorname{rank}_{avg}(|r|),\\operatorname{rank}_{avg}(b))\\) | Spearman；精确ties用平均秩；两个秩变量任一总体方差≤1e−12缺失 |\n| D4 | \\(Z_{D4}^{(h)}=\\operatorname{Corr}(r,b^2)\\) | Pearson；任一变量总体方差≤1e−12缺失；b保持本方向拟合gauge |\n\nCorr(X,Y)=\\(\\langle(X-\\bar X)(Y-\\bar Y)\\rangle/[\\sqrt{\\operatorname{Var}(X)\\operatorname{Var}(Y)}]\\)。最终\\(Z_{Dj}=(Z_{Dj}^{(0)}+Z_{Dj}^{(1)})/2\\)，**必须两个方向都有效**，否则该指标缺失；不把仅一半的值冒作双向平均。\n\n同拟合样本的mean(r)或Cov(r,b)不列候选，因为OLS正常方程使其为零。D1–D4的数学值对r的正共同尺度缩放不变，潜在增量不能归因于sigma本身；数值退化判定仍按以上冻结尺度/阈值执行。四项只作为待测结构特征，不假定高值必然意味着目标风险高。\n\n### 3.6 缺失、稳定性与构造验收\n\n- 每值保存model/context/方向、题数、reference SHA、status与reason；非法非有限结果显式缺失。不得用统一1e−12分母规则覆盖上面的不同数学阈值。\n- A/B源两半各按同式重算；C在S∩H_h各算一次（w仍由相同context对应题的reference记录得出）；D直接使用两方向标量。按outer-test所属context汇合源标量对，报告有效模型/机构数量及两半Spearman（平均秩，未按机构加权，明确为描述统计），不以稳定性好坏改变候选或主要终点。\n- 插补只在当前监督训练上下文拟合：每列用有限训练值的普通中位数（偶数取中间两值平均），预测缺失填该值；训练整列缺失则该列在训练/预测一律填0，记ALL_TRAIN_MISSING。所有20列的原始缺失标记M_j=1[缺失]始终输出，数值插补不改变标记。\n- 单指标若在任一必需监督训练上下文整列缺失，命名指标的支持判决为INCONCLUSIVE/ALL_TRAIN_MISSING，保留预设回退预测；不删模型或组织。联合包允许部分列不可用，但新增8列若在某必需训练上下文全部无有限训练值，则该联合支持判决INCONCLUSIVE。选择流程在该outer内排除有必需inner/outer训练全缺失的单指标包，保留基线；排除仅依源训练状态并入日志。\n- 有限常数列是可计算但无变化，不等于缺失；ridge按其训练方差规则置零，HGB照合同输入。目标Y不插补。原125上下文资格行不因新指标而改变。\n- E2构造验收至少覆盖：K=2/3/4/5、padding/非法gold/重复ID拒绝、选项与题置信精确并列、c=0.1/0.9/1箱端点、N=1覆盖ceil、单类AUROC、全对z=0、极端u的NLL/B7、C机构等权和20/19参考边界、N_v=3/4/5分箱、reference/scored相交拒绝、D两方向与gauge变换、负斜率/零残差/单半失败、训练全缺失、选择ties与同时区间的零方差。手算与独立实现数值误差≤1e−10（ALS收敛及其1e−6阈值另按合同验）；不得用实现自身输出充当expected。\n\n",
+  "dtype": "float64",
+  "log_base": "natural",
+  "reference_min_models_per_item": 20,
+  "C4_min_items": 4,
+  "C4_bin": "1+floor(4*(j-1)/Nv), j=1..Nv",
+  "D_evaluation_min_items": 100,
+  "D_both_directions_required": true,
+  "D1_energy_min_exclusive": 1e-12,
+  "D2_variance_min_exclusive": 1e-12,
+  "correlation_variance_min_exclusive": 1e-12,
+  "reference_projection_sum_s2_min_exclusive": 1e-20,
+  "imputer": "finite training unweighted median; all-train-missing column forced0 also at prediction",
+  "missing_flags": "all20 always appended to all31 packages; original source missingness before imputation"
+}

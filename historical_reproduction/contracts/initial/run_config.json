@@ -1,0 +1,54 @@
+{
+  "plan_sha256": "cebc727795cc07853bc081e24fbbc8099b7077bbddbc389f867b7ccc6ee1c36d",
+  "direction": "ARC_to_HellaSwag",
+  "models": {
+    "base": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50"
+    ],
+    "full": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "theta",
+      "log_s",
+      "log_sigma"
+    ]
+  },
+  "endpoints": [
+    "Y_cal",
+    "Y_sel"
+  ],
+  "lambdas": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0,
+    10000.0
+  ],
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "aux_training_features_folds": 4,
+  "source_sha256": "dab55008db28dbcb3d39273f6dbef9ae3775dedf44c48485a259b8dd29584756",
+  "source_B_sha256": "0a1e7efb96c7c8929ed532df8424f7afcb5e9226cc4199bd4832c3e808ae43b5",
+  "baseline_item_scope": "all ARC valid items F union C",
+  "seed": 20260914,
+  "threads": 1,
+  "cohort_models": 6706,
+  "cohort_orgs": 1331,
+  "max_reference_fits": 105,
+  "bootstrap_n": 2000,
+  "ci_percentiles": [
+    1.25,
+    98.75
+  ]
+}

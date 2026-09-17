@@ -1,0 +1,75 @@
+{
+  "source": "data_peritem_v1_20260913/_model_type_labels.csv",
+  "source_sha256": "3e99ce30e5ca1bd07c28258d29a3b76c7a35a01fcf5374e97e1c86e35533bb46",
+  "cohort_ids_sha256": "280c6bc2f90c63d57318e621cf91d9b48e9397d1969dc2f0eb3da2d0b3ef243a",
+  "scope": "Leaderboard labels and recorded parameter metadata, not verified genealogy, training treatment, active parameter count, or measurements of risk. Unknown values retained. Bin boundaries explicitly differ from historical F7 display; no old counts substituted.",
+  "cohorts": {
+    "frozen_start": {
+      "n_models": 6666,
+      "n_orgs": 1324,
+      "types": {
+        "Chat/post-trained": 1279,
+        "Fine-tuned": 3703,
+        "Unknown": 303,
+        "Continually pretrained": 59,
+        "Pretrained": 346,
+        "Merged": 976
+      },
+      "parameter_bins": {
+        "7–<15B": 3995,
+        "15–<40B": 572,
+        "3–<7B": 466,
+        "Unknown": 752,
+        "<3B": 471,
+        "≥40B": 410
+      },
+      "parameter_metadata_n": 5914
+    },
+    "hellaswag_matched": {
+      "n_models": 3916,
+      "n_orgs": 598,
+      "types": {
+        "Chat/post-trained": 751,
+        "Fine-tuned": 2183,
+        "Unknown": 139,
+        "Continually pretrained": 26,
+        "Pretrained": 148,
+        "Merged": 669
+      },
+      "parameter_bins": {
+        "7–<15B": 2559,
+        "15–<40B": 367,
+        "3–<7B": 194,
+        "Unknown": 365,
+        "<3B": 196,
+        "≥40B": 235
+      },
+      "parameter_metadata_n": 3551,
+      "n_pairs": 1958,
+      "pairs_sha256": "f260e67b03a32bf0d93bc5efcbe9fb10afc581cdfbed7db697827450224efede"
+    },
+    "arc_matched": {
+      "n_models": 3272,
+      "n_orgs": 542,
+      "types": {
+        "Chat/post-trained": 636,
+        "Fine-tuned": 1804,
+        "Unknown": 120,
+        "Continually pretrained": 25,
+        "Merged": 543,
+        "Pretrained": 144
+      },
+      "parameter_bins": {
+        "7–<15B": 2059,
+        "15–<40B": 293,
+        "Unknown": 350,
+        "<3B": 211,
+        "3–<7B": 179,
+        "≥40B": 180
+      },
+      "parameter_metadata_n": 2922,
+      "n_pairs": 1636,
+      "pairs_sha256": "a511cfde1920d3a754a23031e151d0ad623dd97d6b8839ef3ee0702f6a263806"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "scope": "ARC source only; all valid items F union C for traditional statistics; only F half for response parameters",
+  "observation": {
+    "real_options": "n_options agrees with finite positive char_lens; padding has no finite loglik; all real option loglik finite; >=2 options; legal integer gold; unique item and model IDs",
+    "u": "L_k/h_k; h_k stored positive finite character length; no token/raw-L substitution or length imputation",
+    "p": "exp(u_k-max(u))/sum exp(u_j-max(u)); real options only",
+    "argmax": "smallest original option index among exact ties",
+    "y": "1[argmax(u)==gold]; never 1[ell>0]",
+    "c": "max_k p_k",
+    "ell": "u_gold-logsumexp(u_nongold)",
+    "invalid": "invalid item excluded for all source statistics and source fit; invalid rows explicitly masked, not zero-filled as observations"
+  },
+  "statistics": {
+    "A": "mean_i y_i",
+    "C": "mean_i c_i",
+    "O": "C-A",
+    "bins": "10 equal-width [b/10,(b+1)/10), b=0..8; last [0.9,1]; empty bin contributes0; bin=min(floor(10*c),9)",
+    "REL10": "sum_b n_b/N*(mean(c_b)-mean(y_b))^2",
+    "ECE10": "sum_b n_b/N*abs(mean(c_b)-mean(y_b))",
+    "Brier": "mean_i sum_k (p_ik-1[k=gold_i])^2; no division by K",
+    "H": "mean_i -sum_k(p_ik*log(p_ik))/log(K_i); natural log; 0log0=0",
+    "Margin": "mean_i sorted(p_i,descending)[0]-sorted(p_i,descending)[1]",
+    "R50": "mean error among ceil(N/2) items ordered c descending then canonical item ID ascending"
+  },
+  "groups": {
+    "B": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50"
+    ],
+    "C": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin"
+    ],
+    "L": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin",
+      "theta"
+    ],
+    "F": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin",
+      "theta",
+      "log_s",
+      "log_sigma"
+    ]
+  },
+  "ALS": {
+    "objective": "min sum_(m,i valid) (ell_mi-a_m+s_m*b_i)^2; unweighted source observed cells",
+    "reference_items": "source F items with >=20 valid reference Q0 models; noneligible b=NaN",
+    "reference_min_qualified_items": 100,
+    "reference_models": "all Q0 rows in exact reference org set; any row <2 eligible items => diagnostic failure, not implicit drop",
+    "initialization": "b=standardize(-mean_valid_models ell per eligible item), population SD",
+    "model_update": "s_m=-Cov_valid(b,ell_m)/Var_valid(b); a_m=mean(ell_m)+s_m*mean(b)",
+    "item_update": "raw_b_i=sum_valid s_m*(a_m-ell_mi)/sum_valid s_m^2",
+    "gauge": "mu=mean(raw_b),sd=std(raw_b,ddof0); b=(raw_b-mu)/sd; a_new=a_old-s_old*mu; s_new=s_old*sd; if dot(b,initial_b)<0 negate b and s",
+    "convergence": "max_abs(b_new-b_old)<1e-6; <=500 iterations; nonconvergence diagnostic failure; no changing seed/tol or silently dropping",
+    "post_convergence": "recompute model OLS and report normal intercept/slope, objective/history, iterations, mean_b,var_b,sign_dot",
+    "degeneracy_boundaries": {
+      "init_or_gauge_sd_le": 1e-12,
+      "model_var_b_le": 1e-12,
+      "item_s_squared_denominator_le": 1e-20
+    }
+  },
+  "projection": {
+    "items": "scored model valid source F intersect finite reference b only",
+    "s": "-population_cov(b,ell)/population_var(b)",
+    "a": "mean(ell)+s*mean(b)",
+    "theta": "a/s",
+    "sigma": "sqrt(mean((ell-a+s*b)^2)); residual RMS with fitted intercept, population SD; not logistic scale",
+    "logs": "natural log(s), natural log(sigma)",
+    "eligible": "n_valid_qualifiedF>=100 AND Var(b)>1e-12 AND Var(ell)>1e-6 AND finite s>1e-8 AND finite sigma>1e-8 AND finite theta; all9 source summaries finite",
+    "target_data": "no target items, target valid counts, target statistics, org labels as predictor columns"
+  },
+  "two_stage_qualification": {
+    "Q0": "ARC/HS metadata threshold qualified fixed snapshot; used to freeze all splits and reference membership",
+    "context_rows": "for each of125 projection contexts independently require all F features plus all9 source summaries finite; same rows for B/C/L/F, both families, all configs and both endpoints",
+    "Q_H": "union of five qualified outer-test rows, unique model IDs; size determined in A3, not presumed6666",
+    "training": "each training context has its own qualified rows; do not screen using a heldout-dependent other-context fit; compute institution weights after context qualification",
+    "no_repartition": "no redraw/rebalance/refit based on source qualification; report context reasons and final OOF exclusions",
+    "thresholds": "Q_H>=300 models,>=30 orgs; every qualified outer supervised train >=20 orgs; each inner train/valid nonempty and all5 outer tests nonempty; failure INCONCLUSIVE with actual block, never experimental PASS"
+  }
+}

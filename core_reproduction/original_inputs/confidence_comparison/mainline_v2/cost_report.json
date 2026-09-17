@@ -1,0 +1,133 @@
+{
+  "hardware": {
+    "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 48,
+    "python": "3.12.11 (main, Oct  7 2025, 15:34:39) [Clang 20.1.4 ]"
+  },
+  "threads": 1,
+  "groups": {
+    "B": {
+      "cold_standalone_wall_seconds": 345.4161280784756,
+      "cold_standalone_cpu_seconds": 254.46120588699947,
+      "cold_shared_IO_wall_seconds": 85.63899781741202,
+      "cold_shared_target_scoring_wall_seconds": 167.57854683697224,
+      "cold_summaries_wall_seconds": 31.840092008933425,
+      "cold_required_ALS_projection_wall_seconds": 0,
+      "cold_all17_tuning_wall_seconds": 58.6679513566196,
+      "cold_selected_final_wall_seconds": 1.6905400585383177,
+      "warm_no_IO_median_seconds": 0.006602604873478413,
+      "warm_no_IO_IQR_seconds": [
+        0.0065050385892391205,
+        0.00676067266613245
+      ],
+      "warm_with_shared_IO_median_seconds": 0.01647915691137314,
+      "warm_with_shared_IO_IQR_seconds": [
+        0.01602906361222267,
+        0.017077491618692875
+      ],
+      "warm_measurements": 300
+    },
+    "C": {
+      "cold_standalone_wall_seconds": 364.68477296456695,
+      "cold_standalone_cpu_seconds": 273.7906649629991,
+      "cold_shared_IO_wall_seconds": 85.63899781741202,
+      "cold_shared_target_scoring_wall_seconds": 167.57854683697224,
+      "cold_summaries_wall_seconds": 43.38339350745082,
+      "cold_required_ALS_projection_wall_seconds": 0,
+      "cold_all17_tuning_wall_seconds": 65.81790002807975,
+      "cold_selected_final_wall_seconds": 2.2659347746521235,
+      "warm_no_IO_median_seconds": 0.007457326166331768,
+      "warm_no_IO_IQR_seconds": [
+        0.007340306416153908,
+        0.0076210531406104565
+      ],
+      "warm_with_shared_IO_median_seconds": 0.017357499338686466,
+      "warm_with_shared_IO_IQR_seconds": [
+        0.016872746869921684,
+        0.017914944794028997
+      ],
+      "warm_measurements": 300
+    },
+    "L": {
+      "cold_standalone_wall_seconds": 446.8774306587875,
+      "cold_standalone_cpu_seconds": 355.97682204099925,
+      "cold_shared_IO_wall_seconds": 85.63899781741202,
+      "cold_shared_target_scoring_wall_seconds": 167.57854683697224,
+      "cold_summaries_wall_seconds": 43.38339350745082,
+      "cold_required_ALS_projection_wall_seconds": 80.128303674981,
+      "cold_all17_tuning_wall_seconds": 67.82723869755864,
+      "cold_selected_final_wall_seconds": 2.320950124412775,
+      "warm_no_IO_median_seconds": 0.007840138860046864,
+      "warm_no_IO_IQR_seconds": [
+        0.007691803388297558,
+        0.00803426094353199
+      ],
+      "warm_with_shared_IO_median_seconds": 0.01769840717315674,
+      "warm_with_shared_IO_IQR_seconds": [
+        0.01723842928186059,
+        0.01836519781500101
+      ],
+      "warm_measurements": 300
+    },
+    "F": {
+      "cold_standalone_wall_seconds": 450.9205753970891,
+      "cold_standalone_cpu_seconds": 360.0201026299992,
+      "cold_shared_IO_wall_seconds": 85.63899781741202,
+      "cold_shared_target_scoring_wall_seconds": 167.57854683697224,
+      "cold_summaries_wall_seconds": 43.38339350745082,
+      "cold_required_ALS_projection_wall_seconds": 80.128303674981,
+      "cold_all17_tuning_wall_seconds": 71.83560766093433,
+      "cold_selected_final_wall_seconds": 2.3557258993387222,
+      "warm_no_IO_median_seconds": 0.007819046266376972,
+      "warm_no_IO_IQR_seconds": [
+        0.007694168947637081,
+        0.007976077031344175
+      ],
+      "warm_with_shared_IO_median_seconds": 0.017719626426696777,
+      "warm_with_shared_IO_IQR_seconds": [
+        0.017202775459736586,
+        0.018379589077085257
+      ],
+      "warm_measurements": 300
+    }
+  },
+  "cold_actual_all_benchmark_stages_wall_seconds": 649.7876893430948,
+  "cold_actual_all_benchmark_stages_cpu_seconds": 558.7964698119994,
+  "actual_unique_reference_fits": 55,
+  "actual_projection_contexts": 125,
+  "actual_inner_supervised_fits": 2720,
+  "actual_final_supervised_fits": 80,
+  "max_process_lifetime_RSS_bytes": 630284288,
+  "RSS_scope": "per-stage lifetime high-water marks retained in cost/events.jsonl; not independent stage increments",
+  "source_labels_all_groups": 7844281,
+  "target_item_labels_all_groups": 64262353,
+  "extra_LLM_calls_all_groups": 0,
+  "label_scope": "common observed source/target label budget; no new inference; target counts metadata only; per-fit Ntrain and inner validation requests separately logged",
+  "amortization_population": {
+    "Q0_models": 6706,
+    "evaluation_models": 6666,
+    "reference_populations": "features/reference_cache/*.json:identity.reference_model_ids; per-fold supervised train IDs in selection_log"
+  },
+  "benchmark_audit_cost": "F-based common-cohort eligibility audit/reference fits included in actual benchmark total; standalone B/C deployment excludes unnecessary ALS, L/F each pays requisite shared ALS as standalone",
+  "physical_sharing": "summaries C and parameter fits computed once; standalone accounts allocate prerequisites fully to each group; no claim all allocations sum to physical total",
+  "wall_time_scope": "event sums are measured stage work times, not elapsed parallel makespan; standalone cold sums charge common target scoring and source I/O consistently; actual operator elapsed times logged separately",
+  "supervised_fit_vs_prediction": {
+    "fit_wall_seconds": 245.22330839931965,
+    "prediction_wall_seconds": 26.1503088157624
+  },
+  "stage_events": "cost/events.jsonl",
+  "warm_measurements": "cost/warm_measurements.csv",
+  "warm_fixed_models": 100,
+  "warm_repetitions": 3,
+  "disk_bytes": 220959872,
+  "cost_ratios_F_over_C": {
+    "cold": 1.236466693499432,
+    "warm_including_shared_IO": 1.020862860539087
+  },
+  "secondary_low_cost_tradeoff": {
+    "cold": false,
+    "warm": false
+  },
+  "limitations": "Measured first necessary fit phases on one machine. Saved-estimator loading/reference setup excluded only in explicitly warm marginal scenario. Timing overhead and artifact writes not perfectly separable. No cross-hardware cost uncertainty or overall_WIN."
+}

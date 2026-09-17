@@ -1,0 +1,30 @@
+[
+  {
+    "repo": "open-llm-leaderboard-old/details_0-hero__Matter-0.1-7B-DPO-preview",
+    "sha": "c700c20018e30c982f604759775398e3613fe98e",
+    "license": null,
+    "tags": []
+  },
+  {
+    "repo": "open-llm-leaderboard-old/details_meta-llama__Llama-2-7b-hf",
+    "sha": "297e285fda3d6fb174210a88a941e99e98056f34",
+    "license": null,
+    "tags": []
+  },
+  {
+    "repo": "allenai/ai2_arc",
+    "sha": "210d026faf9955653af8916fad021475a3f00453",
+    "license": [
+      "cc-by-sa-4.0"
+    ],
+    "tags": [
+      "license:cc-by-sa-4.0"
+    ]
+  },
+  {
+    "repo": "Rowan/hellaswag",
+    "sha": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+    "license": null,
+    "tags": []
+  }
+]

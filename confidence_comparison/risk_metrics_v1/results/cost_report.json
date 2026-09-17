@@ -1,0 +1,179 @@
+{
+  "status": "REFERENCE",
+  "stages": {
+    "source_ab_pilot_load": {
+      "n_events": 1,
+      "sum_wall_seconds": 2.0882324781268835,
+      "sum_cpu_seconds": 1.9557985619999998,
+      "process_peak_RSS_bytes": 347250688
+    },
+    "source_ab_io": {
+      "n_events": 6709,
+      "sum_wall_seconds": 84.16572491638362,
+      "sum_cpu_seconds": 28.49542343299998,
+      "process_peak_RSS_bytes": 366112768
+    },
+    "source_ab_compute": {
+      "n_events": 6709,
+      "sum_wall_seconds": 80.80742533691227,
+      "sum_cpu_seconds": 80.7983871870004,
+      "process_peak_RSS_bytes": 366112768
+    },
+    "structure_pilot_source_io": {
+      "n_events": 1,
+      "sum_wall_seconds": 2.0115207117050886,
+      "sum_cpu_seconds": 1.992317887,
+      "process_peak_RSS_bytes": 347250688
+    },
+    "structure_reference_ease": {
+      "n_events": 55,
+      "sum_wall_seconds": 4.801006307825446,
+      "sum_cpu_seconds": 4.800637616000018,
+      "process_peak_RSS_bytes": 444809216
+    },
+    "structure_reference_direction": {
+      "n_events": 110,
+      "sum_wall_seconds": 43.82842104323208,
+      "sum_cpu_seconds": 42.93096678000001,
+      "process_peak_RSS_bytes": 458674176
+    },
+    "structure_reference_write": {
+      "n_events": 55,
+      "sum_wall_seconds": 6.414129873737693,
+      "sum_cpu_seconds": 4.581810219999988,
+      "process_peak_RSS_bytes": 458674176
+    },
+    "structure_pilot_projection": {
+      "n_events": 1,
+      "sum_wall_seconds": 0.29884230345487595,
+      "sum_cpu_seconds": 0.2988312500000001,
+      "process_peak_RSS_bytes": 458674176
+    },
+    "synthetic_supervised_pilot": {
+      "n_events": 17,
+      "sum_wall_seconds": 4.73349972628057,
+      "sum_cpu_seconds": 4.685597444000001,
+      "process_peak_RSS_bytes": 347250688
+    },
+    "source_ab_load": {
+      "n_events": 1,
+      "sum_wall_seconds": 1.9765593837946653,
+      "sum_cpu_seconds": 1.96109273,
+      "process_peak_RSS_bytes": 347250688
+    },
+    "source_ab_write": {
+      "n_events": 1,
+      "sum_wall_seconds": 0.9644468687474728,
+      "sum_cpu_seconds": 0.33247815000000003,
+      "process_peak_RSS_bytes": 392769536
+    },
+    "structure_reference_source_io": {
+      "n_events": 1,
+      "sum_wall_seconds": 2.044870227575302,
+      "sum_cpu_seconds": 2.026992688,
+      "process_peak_RSS_bytes": 347250688
+    },
+    "structure_reference_cache_read": {
+      "n_events": 188,
+      "sum_wall_seconds": 3.3631754759699106,
+      "sum_cpu_seconds": 2.8260525579998372,
+      "process_peak_RSS_bytes": 532193280
+    },
+    "structure_context_source_io": {
+      "n_events": 2,
+      "sum_wall_seconds": 4.47285433113575,
+      "sum_cpu_seconds": 4.417714856000001,
+      "process_peak_RSS_bytes": 404852736
+    },
+    "structure_context_projection": {
+      "n_events": 125,
+      "sum_wall_seconds": 473.21920796856284,
+      "sum_cpu_seconds": 468.3777038310001,
+      "process_peak_RSS_bytes": 532193280
+    },
+    "source_assembly": {
+      "n_events": 1,
+      "sum_wall_seconds": 40.19836209900677,
+      "sum_cpu_seconds": 37.30975925,
+      "process_peak_RSS_bytes": 3314642944
+    },
+    "target_admin_prepare": {
+      "n_events": 1,
+      "sum_wall_seconds": 4.361260028555989,
+      "sum_cpu_seconds": 1.8506789589999997,
+      "process_peak_RSS_bytes": 127889408
+    },
+    "E5_all": {
+      "n_events": 1,
+      "sum_wall_seconds": 1695.8376539312303,
+      "sum_cpu_seconds": 10.003319849,
+      "process_peak_RSS_bytes": 1175764992
+    },
+    "supervised_inner_tuning": {
+      "n_events": 21080,
+      "sum_wall_seconds": 3600.7506409380585,
+      "sum_cpu_seconds": 3583.9543847979976,
+      "process_peak_RSS_bytes": 351510528
+    },
+    "supervised_final_fit": {
+      "n_events": 620,
+      "sum_wall_seconds": 134.16983600333333,
+      "sum_cpu_seconds": 133.1115672819992,
+      "process_peak_RSS_bytes": 351510528
+    },
+    "E5_outer": {
+      "n_events": 5,
+      "sum_wall_seconds": 4160.667250169441,
+      "sum_cpu_seconds": 3791.4119337109996,
+      "process_peak_RSS_bytes": 406261760
+    },
+    "target_admin_query": {
+      "n_events": 45,
+      "sum_wall_seconds": 194.3046462815255,
+      "sum_cpu_seconds": 80.22985434500002,
+      "process_peak_RSS_bytes": 351510528
+    },
+    "full_fixed_OOF_evaluation": {
+      "n_events": 1,
+      "sum_wall_seconds": 7.656187595799565,
+      "sum_cpu_seconds": 7.386742869000001,
+      "process_peak_RSS_bytes": 736645120
+    },
+    "target_admin_score": {
+      "n_events": 2,
+      "sum_wall_seconds": 8.356182049959898,
+      "sum_cpu_seconds": 3.956643171,
+      "process_peak_RSS_bytes": 234795008
+    },
+    "warm_setup": {
+      "n_events": 1,
+      "sum_wall_seconds": 8.786633875221014,
+      "sum_cpu_seconds": 6.996509765,
+      "process_peak_RSS_bytes": 771112960
+    },
+    "warm_measurements": {
+      "n_events": 1,
+      "sum_wall_seconds": 313.44928528927267,
+      "sum_cpu_seconds": 221.973071024,
+      "process_peak_RSS_bytes": 771112960
+    }
+  },
+  "actual_supervised_inner_fits": 21080,
+  "actual_supervised_final_fits": 620,
+  "unique_supervised_inner_fits": 21080,
+  "unique_supervised_final_fits": 620,
+  "repeated_fit_attempts": 0,
+  "nominal_total_fits_upper_bound": 22010,
+  "extra_LLM_calls": 0,
+  "all_recorded_pilot_and_debug_costs_retained": true,
+  "E1_input_hash_wall_seconds": 60.00151179544628,
+  "new_output_disk_bytes": 952660025,
+  "warm_report_path": "cost/warm_summary.json",
+  "warm_report_sha256": "316598692df6a32824cf78c6077125df83d264b1e9d1547af5c5a88270e1a187",
+  "warm_status": "COMPLETE_PENDING_V_RESULT",
+  "complete_cold_end_to_end_seconds": null,
+  "complete_cold_status": "UNMEASURED: no complete acquisition-to-results cold timer; separate stage timings are available",
+  "wall_scope": "sum of stage durations; parallel wall times are not added into elapsed critical-path runtime",
+  "mask_control_cost": "all20 computability flags require shared source/reference checks even for B0/Bd; no zero-reference-cost claim",
+  "new_output_disk_bytes_scope": "Total result-tree bytes at the report snapshot, not a new-byte creation delta"
+}

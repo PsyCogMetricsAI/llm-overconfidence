@@ -1,0 +1,40 @@
+{
+  "isolation": "independent target owner process; model executor never opens sealed targets or raw HS logits/correctness; A1 consumes only metadata counts/hash; ARC source inputs allowed",
+  "training_API": {
+    "signature": "training_targets(outer_fold,allowed_orgs,model_ids,context,target=\"hellaswag\")",
+    "response_columns": [
+      "model_id",
+      "org_id",
+      "Y_cal",
+      "Y_sel"
+    ],
+    "validation": "provider derives permitted model IDs/orgs from frozen splits and source-qualified context; requested model set and org set must equal intended current train or inner validation request; reject duplicate/missing/extra IDs, outer H org, unknown target/context",
+    "contexts": "outer{k}/inner{j}/train -> U qualified rows; /validation -> V qualified rows; outer{k}/final_train -> qualified A rows",
+    "inner_validation": "V outcomes only used for validation loss, never supervised fit or preprocessing; V subset A",
+    "process_scope": "each outer fold fresh worker; provider audit log exact requested/returned ID+org hashes, context, time; no all-target load-and-slice in model worker",
+    "target_count": "n_valid_HS is metadata qualification only, never feature or tuning input"
+  },
+  "production_gates": {
+    "implementation": "V-P ACCEPT pinned contract SHA",
+    "fit_or_scoring": "V-D ACCEPT + DESIGN_RELEASE.json pins plan/contract/source/code/environment hashes; target ready marker before requests",
+    "aggregate_reveal": "all5 outer folds and all24 cells complete on identical row IDs; candidates and four-group recommendations sealed; independent reviewer/main controller verifies then SCORING_RELEASE.json pins all artifacts"
+  },
+  "sealed_artifacts": [
+    "predictions_oof.csv",
+    "selection_log.json",
+    "candidates.csv",
+    "recommendations.csv"
+  ],
+  "PREDICTION_SEAL": "SHA256 of each sealed artifact, source/contract/design release hashes, nmodels/norgs/fold/cell completeness checks; no future appends",
+  "scoring_API": "scoring_targets(seal_path,seal_sha); fixed provider-owned targets; no arbitrary target path accepted; verify release and current content SHA for all4 artifacts + seal",
+  "forbidden": [
+    "target c/logits/risk statistics in model features",
+    "outer test outcomes before all-fold seal",
+    "changing selection after risk reveal",
+    "reading old full HS target files in modeling code",
+    "MMLU inclusion changes Q_H",
+    "mutating old CV/CB/source caches"
+  ],
+  "history": "old HS aggregate results already observed; new isolation prevents current outer-fold label leakage, does not claim personnel blind history",
+  "failure": "changed frozen input => stop affected stage; leakage => invalidate downstream then protocol/design repair; max2review rounds; no silent correction of sealed predictions"
+}

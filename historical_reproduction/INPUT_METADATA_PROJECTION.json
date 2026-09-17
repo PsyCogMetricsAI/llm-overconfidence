@@ -1,0 +1,18 @@
+[
+  {
+    "file": "inputs/atlas_table.csv",
+    "original_sha256": "a7b420212ad80d6bfdbd81004403033f1224b88348994ea25bbd7b17241ba421",
+    "public_sha256": "84dd6a0f2120fe98aea9508f2d383098750ad9d75ee14619568fad8d487c2ab2",
+    "retained_identity_count": 6748,
+    "mapping_exact": true,
+    "scope": "Input metadata projection only; all fields consumed by active slope mapping unchanged"
+  },
+  {
+    "file": "inputs/results_atlas_scaling.json",
+    "original_sha256": "90bb15f80856d9ca05f419cada0a9049632e9f5c9c46732d2bd902ae415a3f55",
+    "public_sha256": "5120d85f6bac26b1cf3c593377a6b78bd8869a89048aa886c8bac66b235b0834",
+    "retained_identity_count": 53,
+    "mapping_exact": true,
+    "scope": "Input metadata projection only; all fields consumed by active slope mapping unchanged"
+  }
+]

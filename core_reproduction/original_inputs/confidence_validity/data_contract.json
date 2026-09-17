@@ -1,0 +1,288 @@
+{
+  "status": "CV0_COMPLETE_TARGET_SCORING_NOT_RUN",
+  "seed": 20260914,
+  "schema_examples": {
+    "arc": {
+      "item_ids": {
+        "shape": [
+          1170
+        ],
+        "dtype": "<U22"
+      },
+      "loglik": {
+        "shape": [
+          1170,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "n_tokens": {
+        "shape": [
+          1170,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "char_lens": {
+        "shape": [
+          1170,
+          5
+        ],
+        "dtype": "float64"
+      },
+      "gold": {
+        "shape": [
+          1170
+        ],
+        "dtype": "int64"
+      },
+      "n_options": {
+        "shape": [
+          1170
+        ],
+        "dtype": "int64"
+      },
+      "metric_acc": {
+        "shape": [
+          1170
+        ],
+        "dtype": "float64"
+      },
+      "metric_accnorm": {
+        "shape": [
+          1170
+        ],
+        "dtype": "float64"
+      },
+      "is_greedy_available": {
+        "shape": [],
+        "dtype": "int8"
+      },
+      "repo": {
+        "shape": [],
+        "dtype": "<U66"
+      },
+      "bench": {
+        "shape": [],
+        "dtype": "<U3"
+      },
+      "timestamp": {
+        "shape": [],
+        "dtype": "<U26"
+      },
+      "n_rows_total": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_kept": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_skipped": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_subtasks": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    },
+    "hellaswag": {
+      "item_ids": {
+        "shape": [
+          9586
+        ],
+        "dtype": "<U5"
+      },
+      "loglik": {
+        "shape": [
+          9586,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "n_tokens": {
+        "shape": [
+          9586,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "char_lens": {
+        "shape": [
+          9586,
+          4
+        ],
+        "dtype": "float64"
+      },
+      "gold": {
+        "shape": [
+          9586
+        ],
+        "dtype": "int64"
+      },
+      "n_options": {
+        "shape": [
+          9586
+        ],
+        "dtype": "int64"
+      },
+      "metric_acc": {
+        "shape": [
+          9586
+        ],
+        "dtype": "float64"
+      },
+      "metric_accnorm": {
+        "shape": [
+          9586
+        ],
+        "dtype": "float64"
+      },
+      "is_greedy_available": {
+        "shape": [],
+        "dtype": "int8"
+      },
+      "repo": {
+        "shape": [],
+        "dtype": "<U66"
+      },
+      "bench": {
+        "shape": [],
+        "dtype": "<U9"
+      },
+      "timestamp": {
+        "shape": [],
+        "dtype": "<U26"
+      },
+      "n_rows_total": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_kept": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_skipped": {
+        "shape": [],
+        "dtype": "int64"
+      },
+      "n_subtasks": {
+        "shape": [],
+        "dtype": "int64"
+      }
+    }
+  },
+  "formula": {
+    "u": "loglik / char_lens on real positive finite character lengths",
+    "c": "softmax(u)[argmax(u)]",
+    "y": "argmax(u)==gold; smallest original option index breaks ties",
+    "ell": "u_gold-logsumexp(u_nongold)"
+  },
+  "invalid_rules": [
+    "nonpositive or infinite nonpadding char length",
+    "finite loglik in NaN length padding",
+    "any real option nonfinite loglik",
+    "invalid or noninteger gold",
+    "fewer than two real options",
+    "n_options disagrees with positive finite char lengths",
+    "duplicate item or model ID",
+    "unknown org mapping"
+  ],
+  "identity": "explicit model_id org/name or known leaderboard details_org__name split once at double underscore; preserve single underscores",
+  "source_item_split": "all source item IDs SHA256(20260914|id) ascending, rank mod2; 0F/1C; lexicographic ID only hashes tie",
+  "arrays_schema": {
+    "shape": [
+      6706,
+      1172
+    ],
+    "ell": "float64; invalid NaN",
+    "c": "float64; invalid NaN",
+    "y": "bool; invalid false, always mask",
+    "valid": "bool",
+    "item_ids": "unicode",
+    "model_ids": "canonical org/model unicode",
+    "org_ids": "unicode",
+    "source_half": "int8 0F/1C"
+  },
+  "n_preliminary_models": 6706,
+  "n_preliminary_orgs": 1331,
+  "n_source_items": 1172,
+  "n_F_items": 586,
+  "n_C_items": 586,
+  "n_original_files_hashed": 13494,
+  "tmp_files_excluded": [
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-7B-DPO-preview.npz.tmp.npz",
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-7B-boost-DPO-preview.npz.tmp.npz",
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-7B-boost-DPO.npz.tmp.npz",
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-7B-boost.npz.tmp.npz",
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-7B.npz.tmp.npz",
+    "data_peritem_v1_20260913/arc/details_0-hero__Matter-0.1-Slim-7B.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-7B-DPO-preview.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-7B-boost-DPO-preview.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-7B-boost-DPO.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-7B-boost.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-7B.npz.tmp.npz",
+    "data_peritem_v1_20260913/hellaswag/details_0-hero__Matter-0.1-Slim-7B.npz.tmp.npz"
+  ],
+  "max_probability_sum_error": 9.658940314238862e-14,
+  "minimum_counts": {
+    "source_F": 100,
+    "source_C": 100,
+    "target_valid": 200
+  },
+  "source_parameter_filters_pending": true,
+  "target_scan": "validity/counts only; no target probability, correctness, REL10 or R50 calculated",
+  "target_count_feature_forbidden": true,
+  "runtime_sec": 310.3890326023102,
+  "cohort_audit": {
+    "arc": {
+      "n_scanned_files": 6746,
+      "n_unique_model_ids": 6740,
+      "n_valid_models_at_least_one_item": 6713,
+      "n_file_excluded": 6,
+      "n_tmp_files_excluded": 6,
+      "n_directory_files_at_scan": 6752,
+      "file_exclusion_reasons": {
+        "ValueError: unrecoverable_org_encoding": 6
+      },
+      "real_option_counts_across_rows": {
+        "3": 26960,
+        "4": 7839266,
+        "5": 20220
+      }
+    },
+    "hellaswag": {
+      "n_scanned_files": 6748,
+      "n_unique_model_ids": 6742,
+      "n_valid_models_at_least_one_item": 6714,
+      "n_file_excluded": 6,
+      "n_tmp_files_excluded": 6,
+      "n_directory_files_at_scan": 6754,
+      "file_exclusion_reasons": {
+        "ValueError: unrecoverable_org_encoding": 6
+      },
+      "real_option_counts_across_rows": {
+        "4": 64628812
+      }
+    },
+    "n_common_identities_before_thresholds": 6740,
+    "duplicate_identities": {
+      "arc": {},
+      "hellaswag": {}
+    }
+  },
+  "base_features": {
+    "file": "source_B_features.csv",
+    "item_set": "ALL_VALID_ARC (F union C)",
+    "columns": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50"
+    ],
+    "n_valid_source": "audit only; not a feature",
+    "source_C_features.csv": "SUPERSEDED; not used"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "llm-overconfidence/gold-set-pins/1",
+  "recorded_utc": "2026-09-16T20:04:17Z",
+  "purpose": "Gold-set commit pins for tools/reharvest_peritem.py. Recovered from the harvest-time Hugging Face cache refs, cross-checked against the bundled upstream_metadata records (same commit). The original harvest did not record a revision; these pins are what the cache proves was materialised.",
+  "pins": {
+    "allenai/ai2_arc": {
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "bundled_record": "upstream_metadata/allenai__ai2_arc.json",
+      "bundled_record_sha256": "c3da4f2347e859c9c8d90e36d5f77f2cbb4d1fcf7041921702e399b5ec0219e1",
+      "snapshot_files": [
+        {
+          "path": "ARC-Challenge/test-00000-of-00001.parquet",
+          "bytes": 203808,
+          "sha256": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9"
+        },
+        {
+          "path": "ARC-Challenge/train-00000-of-00001.parquet",
+          "bytes": 189909,
+          "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb"
+        },
+        {
+          "path": "ARC-Challenge/validation-00000-of-00001.parquet",
+          "bytes": 55743,
+          "sha256": "395a5c88d1580d69855fbaee9450270578df1ad5af6259771cd0a42c20e99f05"
+        },
+        {
+          "path": "README.md",
+          "bytes": 9001,
+          "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e"
+        }
+      ]
+    },
+    "Rowan/hellaswag": {
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "bundled_record": "upstream_metadata/Rowan__hellaswag.json",
+      "bundled_record_sha256": "d1965225006b0dc593d9a4d1a7437ee85466e31ae2cfdf4cc542166703939feb",
+      "snapshot_files": [
+        {
+          "path": "README.md",
+          "bytes": 7019,
+          "sha256": "cfe6e26e7e936a447a12f7eee50f2bffb0355c3b97459496d8c7296f65c5b353"
+        },
+        {
+          "path": "data/test-00000-of-00001.parquet",
+          "bytes": 6112397,
+          "sha256": "e572fd5579bd1768b1985f47234f8bbe29247aca200a778b635bffc637714a41"
+        },
+        {
+          "path": "data/train-00000-of-00001.parquet",
+          "bytes": 24365524,
+          "sha256": "cacb12587faa63d7f723a72d61d12bfa94b140446f5a6a0a2e1c6906ab88bf02"
+        },
+        {
+          "path": "data/validation-00000-of-00001.parquet",
+          "bytes": 6315951,
+          "sha256": "899813071e1e95efafec90f856e1987d2150fa4d020fc005df6962c259f660cd"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Versions observed for corrected joint full fits and public cold pilot.
+# Install an appropriate CUDA PyTorch build; recorded torch.__version__ was 2.12.1+cu130.
+numpy==2.5.0
+scipy==1.18.1
+torch==2.12.1

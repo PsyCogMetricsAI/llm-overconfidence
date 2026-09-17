@@ -1,0 +1,23 @@
+{
+  "source_workers": [
+    "scientific runtime/metric_protocol_verifier",
+    "source metrics"
+  ],
+  "target_owner": "independent administrator process; execution role assigned at E4",
+  "verifier": "scientific runtime/metric_formula_verifier",
+  "source_allowed": [
+    "ARC raw files in frozen manifest",
+    "source_arrays",
+    "source baseline/context rows",
+    "source reference caches"
+  ],
+  "source_forbidden": [
+    "raw HS decoded values",
+    "sealed target values",
+    "outer outcome scoring"
+  ],
+  "training": "each outer fresh worker; administrator exact-context whitelist only; inner validation Y for loss only; no load-all-target-and-slice in trainer",
+  "aggregate": "V-SEAL ACCEPT with 190-column OOF/candidates/recommendations hashes before E6 access",
+  "historical_access": "previous HS outcomes known; current role/process isolation prevents new leakage, not historical adaptivity",
+  "no_filesystem_enforcement_claim": true
+}

@@ -1,0 +1,18 @@
+# Generated run trees (regenerable; see docs/04_REQUIRED_INPUTS.md)
+runs/
+core_reproduction/work/
+# Bundled historical summaries under historical_reproduction/work/ are tracked; the large
+# per-branch fit trees are not present in this release.
+
+# Interpreter caches
+__pycache__/
+*.py[cod]
+
+# Note: *.sha256 data files under core_reproduction/ and historical_reproduction/ are tracked
+# scientific manifests and must never be ignored.
+
+# Local Python environments
+.venv*/
+
+# Manuscript sources and compiled paper documents are outside this code repository.
+/manuscript/

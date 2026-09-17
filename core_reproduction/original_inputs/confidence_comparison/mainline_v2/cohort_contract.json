@@ -1,0 +1,24 @@
+{
+  "Q0_nmodels": 6706,
+  "Q0_norgs": 1331,
+  "n_source_items": 1172,
+  "n_F_items": 586,
+  "n_C_items": 586,
+  "source_arrays_sha256": "dab55008db28dbcb3d39273f6dbef9ae3775dedf44c48485a259b8dd29584756",
+  "Q0_model_order_sha256": "6ba344e8b90ba29caa9851df48f15b233e1a5a6f29bde23cdc77606a0d2cbc6e",
+  "fixed_metadata_snapshot": "old CV input_scan/eligibility/target_file_index, freshly byte-SHA verified in input_manifest; no live directory expansion",
+  "eligibility": "ARC F>=100,C>=100,HS>=200; reliable canonical org and model identity; duplicate IDs fail",
+  "source_parameter_qualification": "PENDING_A3; source context rules in feature_contract; historical6666 not assumed",
+  "MMLU_dependency": false,
+  "initial_sample_sufficient": true,
+  "outer_train_org_counts": [
+    1064,
+    1065,
+    1065,
+    1065,
+    1065
+  ],
+  "metadata_exclusions_count": 36,
+  "parameter_qualified_count": "not inferred from oldCV; pendingA3",
+  "cohort_manifest_sha256": "9697ff48b9872862ca95e0720a7ffc46cf9c1a5506b551811cecea7943ad4db7"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "hellaswag_github_license",
+    "url": "https://raw.githubusercontent.com/rowanz/hellaswag/master/LICENSE",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "leaderboard_readme",
+    "url": "https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard/raw/main/README.md",
+    "status": "downloaded",
+    "bytes": 2012,
+    "preview": "---\ntitle: Open LLM Leaderboard\nemoji: \ud83c\udfc6\ncolorFrom: blue\ncolorTo: red\nsdk: docker\nhf_oauth: true\npinned: true\nlicense: apache-2.0\nduplicated_from: open-llm-leaderboard/open_llm_leaderboard\ntags:\n- leaderboard\n- modality:text\n- submission:automatic\n- test:public\n- language:english\n- eval:code\n- eval:math\nshort_description: Track, rank and evaluate open LLMs and chatbots\n---\n\n# Open LLM Leaderboard\n\nModern React interface for comparing Large Language Models (LLMs) in an open and reproducible way.\n"
+  },
+  {
+    "name": "details_readme",
+    "url": "https://huggingface.co/datasets/open-llm-leaderboard-old/details_meta-llama__Llama-2-7b-hf/raw/main/README.md",
+    "status": "downloaded",
+    "bytes": 112917,
+    "preview": "---\npretty_name: Evaluation run of meta-llama/Llama-2-7b-hf\ndataset_summary: \"Dataset automatically created during the evaluation run of model\\\n  \\ [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf) on\\\n  \\ the [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard).\\n\\\n  \\nThe dataset is composed of 127 configuration, each one coresponding to one of\\\n  \\ the evaluated task.\\n\\nThe dataset has been created from 16 run(s). Each run can\\\n  "
+  }
+]

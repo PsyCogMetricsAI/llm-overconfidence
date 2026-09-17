@@ -1,0 +1,454 @@
+{
+  "status": "REFERENCE",
+  "plans": {
+    "core_reproduction/PROTOCOL.md": "3fe80a1018bb1f245dd8e42b53f003a2adef6a40f35989c7242e32e441c6e368"
+  },
+  "amendment_overrides": "ARC→HS mainline independent of MMLU; R50 primary/REL10 secondary; HS selection allowed; 16 family cells +8 deployment cells; old CB insufficient-new-target branch does not stop mainline",
+  "literature": {
+    "path": "confidence_comparison/LITERATURE_MATRIX.json",
+    "sha256": "946bedaf5d7ee64f8f6ea937a21cef4b443b610b95440ec17570bad3606cf996",
+    "scope": "reviewed9-paper representative family matrix, not all SOTA"
+  },
+  "seed": 20260914,
+  "threads": 1,
+  "target": "hellaswag",
+  "source": "arc",
+  "primary_endpoint": "Y_sel=R50",
+  "secondary_endpoint": "Y_cal=REL10",
+  "historical_status": "Followup protocol frozen after observing old HS results; not independent confirmatory evidence; does not adjust historical adaptive selection; old CV 97.5% intervals/SELECT_ONLY remain unchanged",
+  "feature_groups": {
+    "B": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50"
+    ],
+    "C": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin"
+    ],
+    "L": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin",
+      "theta"
+    ],
+    "F": [
+      "A",
+      "C",
+      "O",
+      "REL10",
+      "R50",
+      "ECE10",
+      "Brier",
+      "H",
+      "Margin",
+      "theta",
+      "log_s",
+      "log_sigma"
+    ]
+  },
+  "cells": {
+    "family": [
+      [
+        "B",
+        "ridge",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "B",
+        "ridge",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "B",
+        "hgb",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "B",
+        "hgb",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "C",
+        "ridge",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "C",
+        "ridge",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "C",
+        "hgb",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "C",
+        "hgb",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "L",
+        "ridge",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "L",
+        "ridge",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "L",
+        "hgb",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "L",
+        "hgb",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "F",
+        "ridge",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "F",
+        "ridge",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "F",
+        "hgb",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "F",
+        "hgb",
+        "hellaswag",
+        "Y_cal"
+      ]
+    ],
+    "deployment": [
+      [
+        "B",
+        "best",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "B",
+        "best",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "C",
+        "best",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "C",
+        "best",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "L",
+        "best",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "L",
+        "best",
+        "hellaswag",
+        "Y_cal"
+      ],
+      [
+        "F",
+        "best",
+        "hellaswag",
+        "Y_sel"
+      ],
+      [
+        "F",
+        "best",
+        "hellaswag",
+        "Y_cal"
+      ]
+    ],
+    "required_family_count": 16,
+    "required_deployment_count": 8,
+    "same_rows": "same OOF models in all24 prediction columns; same percontext training/validation rows for every configuration"
+  },
+  "candidate_configurations": [
+    {
+      "family": "ridge",
+      "id": "ridge_-4",
+      "lambda": 0.0001
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_-3",
+      "lambda": 0.001
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_-2",
+      "lambda": 0.01
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_-1",
+      "lambda": 0.1
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_0",
+      "lambda": 1.0
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_1",
+      "lambda": 10.0
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_2",
+      "lambda": 100.0
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_3",
+      "lambda": 1000.0
+    },
+    {
+      "family": "ridge",
+      "id": "ridge_4",
+      "lambda": 10000.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.05_leaf7_l21.0",
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.05_leaf7_l210.0",
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 10.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.05_leaf15_l21.0",
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.05_leaf15_l210.0",
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 10.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.1_leaf7_l21.0",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 1.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.1_leaf7_l210.0",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 10.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.1_leaf15_l21.0",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 1.0
+    },
+    {
+      "family": "hgb",
+      "id": "hgb_lr0.1_leaf15_l210.0",
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15,
+      "l2_regularization": 10.0
+    }
+  ],
+  "ridge": {
+    "weights": "v_m=1/(G*n_g) on current training rows; sum1",
+    "standardization": "mu=sum v*X; sd=sqrt(sum v*(X-mu)^2); train-only; sd<=1e-12 => zero column in train and predict",
+    "objective": "sum v_m*(Y_m-intercept-Z_m beta)^2+lambda*||beta||^2; intercept unpenalized",
+    "fit": "ybar=sum v*Y; beta=(Z^T diag(v) Z+lambda I)^-1 Z^T diag(v)(Y-ybar)",
+    "prediction": "clip(ybar+Znew beta,0,1)"
+  },
+  "hgb": {
+    "class": "sklearn.ensemble.HistGradientBoostingRegressor",
+    "scikit_learn": "1.6.1",
+    "environment": "isolated O2 environment; full dependency versions locked in A2; no install before V-P",
+    "fixed_params": {
+      "loss": "squared_error",
+      "max_iter": 200,
+      "min_samples_leaf": 20,
+      "max_bins": 255,
+      "early_stopping": false,
+      "random_state": 20260914,
+      "categorical_features": null,
+      "max_depth": null,
+      "warm_start": false
+    },
+    "weights": "N_train/(G*n_g); sum N_train; no row-random validation",
+    "input": "numeric float arrays, no extra standardization; all explicit+default get_params recorded under environment lock",
+    "prediction": "clip(predict,0,1)"
+  },
+  "selection": {
+    "inner_loss": "concatenate four heldout inner predictions; mean of per-org mean squared errors on pooled validation rows, not mean of four fold losses",
+    "budget": "each group/endpoint/outer same17 configurations ×4 inner fits; 9 ridge+8 HGB; retain best within each family and best across17",
+    "ties": "loss <= minimum+1e-12; prefer ridge; within ridge larger lambda; within HGB fewer leaves then larger L2 then lower learning_rate",
+    "final_refit": "Fit each family-selected configuration on all qualified outer-train rows. Select deployment among all17 using its own global minimum+1e-12 tie set. Reuse family final fit only if exact selected config ID matches; otherwise fit the globally selected existing configuration separately. No new search/configuration.",
+    "counts": {
+      "inner_supervised_fits": 2720,
+      "family_final_supervised_fits": 80,
+      "deployment_additional_final_fits_max": 40,
+      "total_final_supervised_fits_max": 120,
+      "deployment_extra_fit_condition": "global-selected configuration ID differs from selected configuration of that family; count actual occurrences"
+    },
+    "forbidden": "no outer loss used for family/hyperparameter/feature/threshold selection"
+  },
+  "inference": {
+    "unit": "institution; each model equal within institution; institution equal",
+    "loss": "L_X=(1/G)sum_g (1/n_g)sum_m_in_g (Y_m-pred_mX)^2",
+    "primary": "F_best versus C_best on HS Y_sel",
+    "delta": "L_C-L_F",
+    "I": "delta/L_C",
+    "bootstrap_n": 2000,
+    "seed": 20260914,
+    "rng": "numpy.random.default_rng(seed); integers(0,G,size=(2000,G)); institution ID lexicographic order; repeated draws retained",
+    "CI": "numpy.quantile(...,[0.025,0.975],method=linear); percentile; pair same resampled institutions across all cells/contrasts",
+    "conditioning": "fixed OOF predictions, source/target items and labels; no refitting, no item bootstrap; CI not corrected for historical adaptive selection",
+    "support": "I>=0.05 AND lower95CI(delta)>0 AND >=4/5 outer-fold delta>0 => FOLLOWUP_PREDICTIVE_SUPPORT",
+    "no_support": "evaluable but failed any support condition => NO_PREDEFINED_PREDICTIVE_SUPPORT",
+    "inconclusive": "base loss<=1e-12, insufficient common sample, noncomputable CI => INCONCLUSIVE; report failure cause, never PASS unrun",
+    "descriptive": "Y_cal; F_best-L_best (joint s,sigma addition, no single-s attribution); within-family F-C and F-L; full24-cell MSE/CI matrix, not cherry-picked OR rule",
+    "secondary_contrasts": [
+      "F_best_vs_B_best",
+      "F_best_vs_C_best",
+      "F_best_vs_L_best",
+      "F_ridge_vs_C_ridge",
+      "F_hgb_vs_C_hgb",
+      "F_ridge_vs_L_ridge",
+      "F_hgb_vs_L_hgb"
+    ],
+    "old_CV": "do not subtract old/new cohort MSE or alter old interval levels"
+  },
+  "model_selection": {
+    "case_unit": "one outer-test org; only Q_H eligible candidate models",
+    "candidates": "A_m>=max withinorg Q_H A -0.02; at least3 candidates",
+    "recommend": "each group best predictor minimum predicted Y_sel; exact tie canonical model ID lexical; target column hellaswag required",
+    "seal": "candidates/recommendations/OOF/selection logs and hashes before target aggregate reveal",
+    "U": "mean case-org actual R50 of recommended model",
+    "regret": "mean case-org (recommended actual R50 minus minimum actual candidate R50); oracle used after seal only",
+    "D": "U_Cbest-U_Fbest",
+    "minimum_cases": 30,
+    "minimum_outer_folds_with_cases": 3,
+    "insufficient": "INSUFFICIENT_CASES; keep descriptive counts/results, never relax thresholds or target-spread filtering",
+    "CI": "2000 paired case-org bootstrap, default_rng(20260914), separately sorted case-org ID indices;95% percentile [0.025,0.975]; all methods same draws",
+    "decision_support": "only primary FOLLOWUP_PREDICTIVE_SUPPORT AND D>=0.01 AND lower95CI(D)>0 => FOLLOWUP_DECISION_SUPPORT",
+    "prediction_only": "primary supported but selection not supported => PREDICTION_ONLY (preserve INSUFFICIENT_CASES substatus if applies)",
+    "primary_not_supported": "selection is DESCRIPTIVE_ONLY regardless of D; never replaces failed primary"
+  },
+  "cost": {
+    "hardware": "same recorded hardware, CPU single thread; OPENBLAS/OMP/MKL/NUMEXPR=1; no GPU/new LLM calls",
+    "fields": [
+      "wall_seconds",
+      "cpu_seconds",
+      "peak_RSS_bytes",
+      "disk_bytes",
+      "source_label_count",
+      "target_training_label_count",
+      "extra_LLM_calls"
+    ],
+    "stages": [
+      "source_io",
+      "source_summaries",
+      "reference_ALS",
+      "source_projection",
+      "supervised_inner_tuning",
+      "supervised_final_fit",
+      "prediction"
+    ],
+    "cold": "first actual necessary O2 run, all exact-reference fits and auxiliary contexts measured; no free prior caches; count unique fits and contexts separately",
+    "sharing": "shared source I/O separately; B summaries prefix of C; C shared summaries; L/F shared ALS+projection physically once but charge standalone L and F required cost each; family/best tuning costs explicitly counted and not erased by reuse",
+    "common_eligibility_audit": "report F-based common-cohort screening cost separately from each deployable method prerequisites; standalone B/C do not require ALS, L/F do; do not obscure total benchmark audit cost",
+    "warm": "fixed first100 Q_H model IDs by SHA(seed|model_id) (all if<100); each model3 serial reps; all4 deployment groups for both endpoints on saved corresponding outer-trained reference/estimators; extraction from source raw ARC record, L/F projection, prediction included; target not read",
+    "warm_order": "for each repetition and model draw one permutation of B,C,L,F from single default_rng(seed) stream iterating rep then hash-ordered models; preserve measured order manifest",
+    "warm_metrics": "permethod permodel extract+project+predict wall/CPU; median and 25/75 percentiles; warm-cache timing labeled; shared I/O separately same allocation; amortization training population recorded",
+    "no_timing_retrain": true,
+    "low_cost_tradeoff": "F_best vs C_best main HS I lower95CI > -0.01 AND preidentified cold or warm F/C cost ratio<=0.8; secondary only, not main win; all measured costs reported regardless of performance",
+    "axes": [
+      "prediction",
+      "decision",
+      "cold_cost",
+      "warm_cost"
+    ],
+    "two_target_consistency": "NOT_APPLICABLE mainline only; optional MMLU cohort may differ, never compute min(I_HS,I_M) or claim common-cohort stability"
+  },
+  "resources": {
+    "gate_seconds_per_node": 43200,
+    "pilot": "A2 constructed response/labels only; maximum actual reference matrix dimensions with synthetic labels for HGB at full training rows/features and all8 configs; source-only reference pilot only after V-D before A3; original old2.2387s reference is planning evidence not new measurement",
+    "estimate": "all unique exact-reference fits +125 projection contexts+2720 supervised inner fits+80 family final fits+at most40 necessary deployment-only final fits+all data I/O+warm100x3x4; record measured extrapolation; >12h node => G-SCOPE before production",
+    "environment_and_selftests": "A2 only after V-P; no true target results during development; V-D before real source fit/target scoring"
+  },
+  "review": {
+    "V_P": "independent contract audit before implementation",
+    "V_D": "independent synthetic code/environment/design audit before real fitting/scoring",
+    "V_R": "independent full result audit absolute numerical error<=1e-8",
+    "max_rounds": 2,
+    "second_reject": "G-STOP",
+    "delivery": "V-R then mainline manuscript; optional MMLU current status at cutoff; V-T then G-READ; no full R/new sensitivity/temperature/reverse task"
+  },
+  "protocol_correction": "PROTOCOL_CORRECTION.md: non-transitive numerical tie sets; original17 configurations, loss thresholds, families, endpoints and plan hashes unchanged"
+}

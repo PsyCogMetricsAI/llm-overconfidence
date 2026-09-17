@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "source": "atlas_oll.npz (OLL-old, all details repos)",
+    "minfam": 20,
+    "scope": "Canonical uploader names only; source numerical findings excluded"
+  },
+  "benchmarks": {
+    "arc": {
+      "family_map": [
+        {
+          "family": "AA051610"
+        },
+        {
+          "family": "Azazelle"
+        },
+        {
+          "family": "BFauber"
+        },
+        {
+          "family": "CHIH-HUNG"
+        },
+        {
+          "family": "ChaoticNeutrals"
+        },
+        {
+          "family": "Charlie911"
+        },
+        {
+          "family": "CultriX"
+        },
+        {
+          "family": "DreadPoor"
+        },
+        {
+          "family": "EleutherAI"
+        },
+        {
+          "family": "FelixChao"
+        },
+        {
+          "family": "Gille"
+        },
+        {
+          "family": "Josephgflowers"
+        },
+        {
+          "family": "KnutJaegersberg"
+        },
+        {
+          "family": "KoboldAI"
+        },
+        {
+          "family": "Kquant03"
+        },
+        {
+          "family": "Kukedlc"
+        },
+        {
+          "family": "LeroyDyer"
+        },
+        {
+          "family": "Locutusque"
+        },
+        {
+          "family": "MaziyarPanahi"
+        },
+        {
+          "family": "Mihaiii"
+        },
+        {
+          "family": "OpenBuddy"
+        },
+        {
+          "family": "Qwen"
+        },
+        {
+          "family": "Sao10K"
+        },
+        {
+          "family": "TFLai"
+        },
+        {
+          "family": "TeeZee"
+        },
+        {
+          "family": "TheBloke"
+        },
+        {
+          "family": "Undi95"
+        },
+        {
+          "family": "Weyaxi"
+        },
+        {
+          "family": "YeungNLP"
+        },
+        {
+          "family": "Yuma42"
+        },
+        {
+          "family": "ZhangShenao"
+        },
+        {
+          "family": "abacusai"
+        },
+        {
+          "family": "allknowingroger"
+        },
+        {
+          "family": "chargoddard"
+        },
+        {
+          "family": "cloudyu"
+        },
+        {
+          "family": "cognitivecomputations"
+        },
+        {
+          "family": "ehartford"
+        },
+        {
+          "family": "flammenai"
+        },
+        {
+          "family": "grimjim"
+        },
+        {
+          "family": "ibivibiv"
+        },
+        {
+          "family": "jisukim8873"
+        },
+        {
+          "family": "jondurbin"
+        },
+        {
+          "family": "jsfs11"
+        },
+        {
+          "family": "liminerity"
+        },
+        {
+          "family": "macadeliccc"
+        },
+        {
+          "family": "migtissera"
+        },
+        {
+          "family": "mlabonne"
+        },
+        {
+          "family": "nbeerbower"
+        },
+        {
+          "family": "nlpguy"
+        },
+        {
+          "family": "uukuguy"
+        },
+        {
+          "family": "vicgalle"
+        },
+        {
+          "family": "yam-peleg"
+        },
+        {
+          "family": "yeontaek"
+        }
+      ]
+    }
+  }
+}

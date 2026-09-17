@@ -1,0 +1,91 @@
+{
+  "schema": "llm-overconfidence/array-identity/1",
+  "recorded_utc": "2026-09-16",
+  "source": "Corrected source on original 6706-model candidate pool, recomputed 1168-item axis/halves; final qualified evaluation cohort 6701 models / 1330 organizations is determined by fresh source fits",
+  "source_sha256": "28b2d6be6898c4da5a30735c551c9d0dad5f85873b6d3e576700afbce17eed99",
+  "source_bytes": 117073688,
+  "canonicalisation": "sha256(dtype.str | 0x00 | shape as little-endian int64 | C-order contiguous bytes); big-endian numeric arrays converted to little-endian; npz container framing/compression never compared",
+  "exact_zip_bytes_compared": false,
+  "keys": [
+    "ell",
+    "c",
+    "y",
+    "valid",
+    "item_ids",
+    "model_ids",
+    "org_ids",
+    "source_half"
+  ],
+  "n_models": 6706,
+  "n_items": 1168,
+  "arrays": {
+    "ell": {
+      "shape": [
+        6706,
+        1168
+      ],
+      "dtype": "<f8",
+      "digest": "1604314466d3467c93761110a541ef6f169a0b9c328219aafa62305971fadca7",
+      "nan": 2380,
+      "posinf": 0,
+      "neginf": 0
+    },
+    "c": {
+      "shape": [
+        6706,
+        1168
+      ],
+      "dtype": "<f8",
+      "digest": "b77d8b5bf0279d7a8962c402270dc10e4757839deabe84b84050a2732ac76cc3",
+      "nan": 2380,
+      "posinf": 0,
+      "neginf": 0
+    },
+    "y": {
+      "shape": [
+        6706,
+        1168
+      ],
+      "dtype": "|b1",
+      "digest": "22d0176cf994af319ce51d19a2eb0ced55c7893778fb7d4679084471dd2a86ff"
+    },
+    "valid": {
+      "shape": [
+        6706,
+        1168
+      ],
+      "dtype": "|b1",
+      "digest": "e147d940b4fad7d2c1a642a3d553c78a6b382765195096af3ce47ba502b304e6"
+    },
+    "item_ids": {
+      "shape": [
+        1168
+      ],
+      "dtype": "<U22",
+      "digest": "b102490e554f93aa29bfbfe492feace2895786a86a4161d81f93f2e48d8a1daa"
+    },
+    "model_ids": {
+      "shape": [
+        6706
+      ],
+      "dtype": "<U82",
+      "digest": "71e4b0920541d9adaadde3348a94e1520fce258c61c13057ae866b8b1dc4da0c"
+    },
+    "org_ids": {
+      "shape": [
+        6706
+      ],
+      "dtype": "<U28",
+      "digest": "153cf7dd412861ae544f8981e634d55cd9d7006250a073c44f1aabe0a5645ba4"
+    },
+    "source_half": {
+      "shape": [
+        1168
+      ],
+      "dtype": "|i1",
+      "digest": "969c88ac9cccdaa49d80f00c5d4ab40a9cd6d6665d74136075d7b5439d50f063",
+      "min": 0,
+      "max": 1
+    }
+  }
+}

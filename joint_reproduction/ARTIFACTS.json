@@ -1,0 +1,46 @@
+{
+  "status": "HASH_BOUND_CORRECTED_REFERENCE_ARTIFACTS",
+  "source": "New corrected full-panel fit; not historical 1974-panel reproduction",
+  "files": {
+    "original_code/analyze_joint.py": "16c18f8a50f9c0b4ebf21aa8a8ef21a391cf74c1f19912b74ed7778bbed7f68c",
+    "original_code/joint_runner.py": "2d9857498d851da9b024df0742188e4acf4f9d0ef04d0caef1f5c747e1eddbc1",
+    "original_code/build_matrix.py": "d8f04d22df59a8ffa1507710408d291b3bbb57c270b7346728bd31dc2aef3628",
+    "original_code/joint_irt.py": "9bb4eca87b3a8023719297c3d9dab00f2dca1c43a3d2844b3358716fd5c46924",
+    "original_code/beta_irt.py": "8390dc833fb2f8fa637afc058ada86c0be85f8316afa58c92a9fc21ae37cf594",
+    "original_code/m10_crossbench.py": "dd341980b118b49352e1b5c3d3a9c239b972f1cca46eb4dd588978d72c987d56",
+    "original_code/m10b_decisive.py": "ff922e7acc3ecb245eace282f3f58754abde4ed0e97c75377030cfd0fe7926c3",
+    "original_code/m10_finalize.py": "97f6a0c164aa16de122dadfc2dc9d3bdedbd79a50c0381bdf7dd08089d09fe7e",
+    "reference_results/analyze_joint_ladder.csv": "525dde663682dcd5079e00faec8189acb45cfc310ccda7b1a9ce70f81918431e",
+    "reference_results/analyze_joint_report.json": "d5e34e7574e26688c914b7181cadcc65c3b331eb8875ddce9077f3a2fcc3c8e0",
+    "reference_results/analyze_joint_shared_ids.txt": "0edc6e882ebcfb663d73eef4f173970eb82e82caa0b7ade48185e3e74bb4575f",
+    "reference_results/analyze_joint_tables.csv": "7a8d913f53fc50e056f11f659daf06730ebeb63453f401831c41772e5d8fd392",
+    "reference_results/joint_run_arc_full_2500ep.json": "6cdb409d19c170b5fdebfa8ca5807092d69489ada391e7d18f375cbdda83786b",
+    "reference_results/joint_run_hellaswag_full_2500ep.json": "7ff5e8ebb5a4b99dc2b7b30c5998dca278a62b5313e77f28b36774312864dbef",
+    "reference_results/joint_vectors_arc_full_2500ep.npz": "710ec9e4127073956af65b57934bdd0a9a2e45527095c817f2d70eaa748bcc37",
+    "reference_results/joint_vectors_hellaswag_full_2500ep.npz": "0b41645e6a0b87be8a1e0b13df3a421d15bb28647fa1efc19eeb537a90f726c0",
+    "derived_inputs/item_length_arc.npy": "2a01565080710dedbd6231ef0f763b7fc3b83ec6403c3ccb8c69e7202f956c15",
+    "derived_inputs/item_length_hellaswag.npy": "1f23fecd65e004b27b5cd3309b6502cf30e16c162c6acb21810f6cd300e238d4",
+    "original_code/cell_recover.py": "cc74c5dfb4e7eb29675b8c71611be04d4469845784da913a34586085cfe250f7",
+    "original_code/prepare_data.py": "6ef1efe58e1f4e06f557790ad7e5f767e3633a0c816143f51f7f85ec64ce54da",
+    "input_contract/CONTRACT.json": "4e3aee87b71f251785514e9822bd1f41e1e333e26c53eb12d20ea8a276344853",
+    "input_contract/items_arc.canonical.txt": "173bab2d498a0795748411b0e658188a0a1d5c5759115cb345425bdc3150ebaf",
+    "input_contract/items_hellaswag.canonical.txt": "3a8faf8fd060232663ba9754c4ce3ddf6e12295379c0edf25fbc53d09da632d0",
+    "cold.py": "72327cacba857d8070a0908e95839901c26650154aa39341726f121f1c3764fa"
+  },
+  "item_length": {
+    "arc": {
+      "path": "derived_inputs/item_length_arc.npy",
+      "sha256": "2a01565080710dedbd6231ef0f763b7fc3b83ec6403c3ccb8c69e7202f956c15",
+      "source_matrix_sha256": "5107e1a3610e43beb55a54e02c8b51c0332f1ffd01b84f55276644b2c2112aec",
+      "derivation": "nanmedian(LP_sum.astype(float64)/LP_mean.astype(float64),axis=1); subtract nanmean",
+      "n_items": 1168
+    },
+    "hellaswag": {
+      "path": "derived_inputs/item_length_hellaswag.npy",
+      "sha256": "1f23fecd65e004b27b5cd3309b6502cf30e16c162c6acb21810f6cd300e238d4",
+      "source_matrix_sha256": "0e8f3eb9c0c8b0d02dcf1c85f754d7ffc25a8b3f531a620ab5506d07b8455187",
+      "derivation": "nanmedian(LP_sum.astype(float64)/LP_mean.astype(float64),axis=1); subtract nanmean",
+      "n_items": 9564
+    }
+  }
+}

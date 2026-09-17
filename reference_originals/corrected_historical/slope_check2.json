@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "raw": {
+      "n": 6717,
+      "pearson": {
+        "point": 0.977143871685871,
+        "jackknife_mean": 0.9771864107087704,
+        "jackknife_min": 0.976998244692574,
+        "jackknife_max": 0.9775927861940822,
+        "jackknife_SE": 0.0006430651709789808,
+        "jackknife_CI95_normal": [
+          0.9758834639507522,
+          0.9784042794209898
+        ],
+        "n_families_jackknifed": 53
+      },
+      "spearman": {
+        "point": 0.9230283910378985,
+        "jackknife_mean": 0.923135915308313,
+        "jackknife_min": 0.9216891103189774,
+        "jackknife_max": 0.9254701679759936,
+        "jackknife_SE": 0.0038089829546262477,
+        "jackknife_CI95_normal": [
+          0.915562784446831,
+          0.9304939976289659
+        ],
+        "n_families_jackknifed": 53
+      }
+    }
+  },
+  "family_definition": "uploading organization (atlas_table family); canonical 53 from results_atlas_scaling.json (minfam=20). Models whose org is NOT one of the 53 = own singleton family (never a jackknife leave-out group).",
+  "scope": "Corrected raw log-slope association; no psychological trait interpretation."
+}

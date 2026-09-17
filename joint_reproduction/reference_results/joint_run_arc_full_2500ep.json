@@ -1,0 +1,180 @@
+{
+  "bench": "arc",
+  "config": {
+    "Lt": "nanmedian(LP_sum/LP_mean, axis=1) centered by nanmean",
+    "channel": "joint only: C=BIN (Eq1), Y=RESP (Eq2); no IRSL (A) beta fits run",
+    "clamp_eps": 1e-06,
+    "cuda_device": "NVIDIA RTX 4000 Ada Generation",
+    "device": "cuda",
+    "dtype": "float64",
+    "grad_clip": null,
+    "lr": 0.05,
+    "n_epochs": 2500,
+    "phi": 10.0,
+    "python": "3.12.11",
+    "response": "exp(LP_mean).clip(1e-6,1-1e-6)",
+    "seed": 0,
+    "torch": "2.12.1+cu130",
+    "torch_num_threads": 24
+  },
+  "input_masks": {
+    "NaN_preserved": true,
+    "n1_BIN_observed": 7839939,
+    "n2_RESP_observed": 7839939
+  },
+  "item_parameters": {
+    "a": {
+      "dtype": "float64",
+      "max": 17.176770851715535,
+      "mean": 5.121363326745116,
+      "min": -1.8305337163192819,
+      "sha256": "cd09fe71a2b40f30ce9c9a313d8e40a4357605b8ee2590602a3eeb16887b6d1c",
+      "shape": [
+        1168
+      ]
+    },
+    "alpha": {
+      "dtype": "float64",
+      "max": 21.522446069820322,
+      "mean": 2.0895865672107696,
+      "min": -1.1112057607374166,
+      "sha256": "b95141162ced01771fd52f1907d594f32d37162e7649be39a6a94f96301d0cf0",
+      "shape": [
+        1168
+      ]
+    },
+    "b": {
+      "dtype": "float64",
+      "max": 13.558556411836307,
+      "mean": 0.8071347212031905,
+      "min": -9.559136452761381,
+      "sha256": "f2a77222094f02ec044f5158bfdc15b02b4dae5ec488a7f4f05e7fd231f11a9d",
+      "shape": [
+        1168
+      ]
+    },
+    "z": {
+      "dtype": "float64",
+      "max": 11.066647178799252,
+      "mean": 1.2166827667125003e-17,
+      "min": -6.563389144687113,
+      "sha256": "ccf19e088598b73682b5d090be23e4c91f88cd98f1b1b4feda9685a168dabf5e",
+      "shape": [
+        1168
+      ]
+    }
+  },
+  "loss": {
+    "first": 6.174988191013304,
+    "history_sha256": "b1153726f33bccc077db2ad32664e7a261ba364cae5f6fa4ad11c2060c28b5d5",
+    "last": -0.9609911838630819,
+    "min": -0.9609911838630819,
+    "n_recorded": 2500,
+    "npz_dtype": "float64",
+    "npz_key": "loss_history",
+    "npz_shape": [
+      2500
+    ]
+  },
+  "matrix": "matrices/matrix_arc.analysis-eligible-6717.npz",
+  "matrix_array_sha256": {
+    "BIN": "0d1ba7c90d7f1caefb9690ce72e0c3928997ce9246a4586f1380af5d31c89f81",
+    "CONF": "3b84ef7fac9de47b6e9138a6c109f7e2f2683ccd654de085035792d5cca96dbc",
+    "LP_mean": "8d5424194fa7a825f70f16fa076a3809b1e12197bfe7cf65be76c0ffdd9f30b8",
+    "LP_sum": "26b7c61076a299a74b905a67e02b24e27d7702f684dbd1f64686bb7a52addbd1"
+  },
+  "matrix_sha256": "5107e1a3610e43beb55a54e02c8b51c0332f1ffd01b84f55276644b2c2112aec",
+  "matrix_shape_items_models": [
+    1168,
+    6717
+  ],
+  "mode": "full",
+  "model_latents": {
+    "gamma_m": {
+      "dtype": "float64",
+      "max": 0.46993833352615566,
+      "mean": -1.5867412589551142e-18,
+      "min": -0.8248615779661381,
+      "sha256": "9baa9a564777fdd63c4d646e9644818a799f420f2a5f2d55b959821a989950e2",
+      "shape": [
+        6717
+      ]
+    },
+    "theta_A": {
+      "dtype": "float64",
+      "max": 4.949838010416763,
+      "mean": -1.375175757761099e-17,
+      "min": -0.7771883887958319,
+      "sha256": "20fe5bea384cb8ad5c132ef5e324ba9b91aedfcb88515114325e50cf9f908df7",
+      "shape": [
+        6717
+      ]
+    },
+    "theta_C": {
+      "dtype": "float64",
+      "max": 1.7798348949137182,
+      "mean": -5.289137529850381e-18,
+      "min": -2.808976730122507,
+      "sha256": "d4467c39b83a4c693e1c80d9229289a02540fa3d3f161f8bddccd9e74132aa66",
+      "shape": [
+        6717
+      ]
+    }
+  },
+  "n_items": 1168,
+  "n_models": 6717,
+  "npz_keys": [
+    "models",
+    "theta_A",
+    "theta_C",
+    "gamma_m",
+    "acc",
+    "meanY",
+    "meanCONF",
+    "gauge",
+    "tok_len",
+    "signed",
+    "a",
+    "b",
+    "alpha",
+    "z",
+    "mode",
+    "fit_epochs",
+    "loss_history"
+  ],
+  "original_modules": {
+    "beta_irt.py": "8390dc833fb2f8fa637afc058ada86c0be85f8316afa58c92a9fc21ae37cf594",
+    "joint_irt.py": "9bb4eca87b3a8023719297c3d9dab00f2dca1c43a3d2844b3358716fd5c46924"
+  },
+  "out_json": "results/joint_run_arc_full_2500ep.json",
+  "out_npz": "results/joint_vectors_arc_full_2500ep.npz",
+  "out_npz_sha256": "710ec9e4127073956af65b57934bdd0a9a2e45527095c817f2d70eaa748bcc37",
+  "output_finiteness": {
+    "all_finite": true,
+    "loss_history_n": 2500
+  },
+  "panel": "full analysis panel",
+  "peak_memory": {
+    "cuda_max_allocated_bytes": 1589167616,
+    "cuda_max_reserved_bytes": 1709178880,
+    "cuda_total_bytes": 20989804544,
+    "process_maxrss_kb": 1322168
+  },
+  "status": "FULL_COMPLETED",
+  "timing": {
+    "ended_utc": "2026-09-16T20:50:42Z",
+    "s_per_epoch": 0.069779,
+    "started_utc": "2026-09-16T20:47:47Z",
+    "wall_s": 174.446
+  },
+  "vectors_sanity": {
+    "a_mean": 5.121363326745116,
+    "all_finite": true,
+    "alpha_mean": 2.0895865672107696,
+    "b_mean": 0.8071347212031905,
+    "gamma_m_mean": -1.5867412589551142e-18,
+    "theta_A_mean": -1.375175757761099e-17,
+    "theta_C_mean": -5.289137529850381e-18,
+    "z_mean": 1.2166827667125003e-17
+  }
+}

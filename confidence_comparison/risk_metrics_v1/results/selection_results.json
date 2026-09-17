@@ -1,0 +1,1078 @@
+{
+  "status": "DESCRIPTIVE_ONLY",
+  "n_case_orgs": 266,
+  "n_outer_folds": 5,
+  "case_orgs": [
+    "0-hero",
+    "222gate",
+    "4season",
+    "922-CA",
+    "AA051611",
+    "AI-Sweden-Models",
+    "ALBADDAWI",
+    "AbacusResearch",
+    "AdaptLLM",
+    "AlanRobotics",
+    "Alsebay",
+    "Aspik101",
+    "AurelPx",
+    "AwanLLM",
+    "Azazelle",
+    "Azure99",
+    "BFauber",
+    "BarryFutureman",
+    "CHIH-HUNG",
+    "CallComply",
+    "Cesco2004",
+    "Changgil",
+    "ChaoticNeutrals",
+    "ChavyvAkvar",
+    "Chickaboo",
+    "ChuckMcSneed",
+    "ConvexAI",
+    "CorticalStack",
+    "CultriX",
+    "DUAL-GPO-2",
+    "DatPySci",
+    "DevaMalla",
+    "Devio",
+    "DreadPoor",
+    "Edgerunners",
+    "EmbeddedLLM",
+    "Enno-Ai",
+    "Eric111",
+    "Evaloric",
+    "FelixChao",
+    "Felladrin",
+    "Fredithefish",
+    "FuseAI",
+    "G-reen",
+    "GeneZC",
+    "GeorgiaTech",
+    "Gille",
+    "GreenNode",
+    "Hastagaras",
+    "HenryJJ",
+    "ICBU-NPU",
+    "IkariDev",
+    "InnerI",
+    "Intel",
+    "Inv",
+    "Isaak-Carter",
+    "JCX-kcuf",
+    "JaeyeonKang",
+    "Josephgflowers",
+    "JunchengXie",
+    "Kiddyz",
+    "KnutJaegersberg",
+    "Korabbit",
+    "Kquant03",
+    "Kukedlc",
+    "LTC-AI-Labs",
+    "Locutusque",
+    "LordNoah",
+    "Lvxy1117",
+    "MSL7",
+    "MaziyarPanahi",
+    "Mihaiii",
+    "Mikivis",
+    "MiniMoog",
+    "NLUHOPOE",
+    "NekoPunchBBB",
+    "Neuronovo",
+    "NeverSleep",
+    "NobodyExistsOnTheInternet",
+    "NovoCode",
+    "OpenBuddy",
+    "PeanutJar",
+    "PetroGPT",
+    "Ppoyaa",
+    "Q-bert",
+    "R136a1",
+    "Radiantloom",
+    "RaduGabriel",
+    "RatanRohith",
+    "Replete-AI",
+    "ResplendentAI",
+    "SC56",
+    "SC99",
+    "SCE",
+    "SanjiWatsuki",
+    "Sao10K",
+    "Severian",
+    "ShenaoZ",
+    "ShenaoZhang",
+    "SilverCoder66",
+    "Steelskull",
+    "Stopwolf",
+    "Swisslex",
+    "TFLai",
+    "Test157t",
+    "TheBloke",
+    "TheTravellingEngineer",
+    "TinyPixel",
+    "TitleOS",
+    "ToastyPigeon",
+    "TomGrc",
+    "UCLA-AGI",
+    "WDong",
+    "WebraftAI",
+    "Weyaxi",
+    "YouKnowMee",
+    "YouKnwMe",
+    "Yuma42",
+    "Zardos",
+    "ZhangShenao",
+    "abacusai",
+    "abhishek",
+    "abideen",
+    "aboros98",
+    "adamo1139",
+    "allknowingroger",
+    "alnrg2arg",
+    "amu",
+    "andysalerno",
+    "argilla",
+    "athirdpath",
+    "augtoma",
+    "automerger",
+    "azarafrooz",
+    "bardsai",
+    "beaugogh",
+    "beberik",
+    "bhavinjawade",
+    "brucethemoose",
+    "caisarl76",
+    "cgato",
+    "chanwit",
+    "chargoddard",
+    "chatty123",
+    "cloudyu",
+    "codellama",
+    "core-3",
+    "cstr",
+    "ddyuudd",
+    "dhmeltzer",
+    "dvruette",
+    "eachadea",
+    "eren23",
+    "eswardivi",
+    "fangloveskari",
+    "fhai50032",
+    "fionazhang",
+    "flammenai",
+    "flemmingmiguel",
+    "frankenmerger",
+    "freeCS-dot-org",
+    "freecs",
+    "fzzhang",
+    "g-ronimo",
+    "gagan3012",
+    "garage-bAInd",
+    "genaicore3434",
+    "glenn2",
+    "gmonsoon",
+    "golaxy",
+    "gradientputri",
+    "grimjim",
+    "grimpep",
+    "hamxea",
+    "haoranxu",
+    "harborwater",
+    "hooking-dev",
+    "ibivibiv",
+    "icefog72",
+    "janhq",
+    "jefferylovely",
+    "jeonsworld",
+    "jikaixuan",
+    "jisukim8873",
+    "jondurbin",
+    "jrahn",
+    "jsfs11",
+    "juhwanlee",
+    "jukofyork",
+    "kaitchup",
+    "kekmodel",
+    "kyujinpy",
+    "l3utterfly",
+    "leonarad",
+    "leveldevai",
+    "lex-hue",
+    "liminerity",
+    "llmixer",
+    "lloorree",
+    "macadeliccc",
+    "manishiitg",
+    "marcchew",
+    "mayacinka",
+    "migtissera",
+    "mlabonne",
+    "mncai",
+    "moreh",
+    "mvpmaster",
+    "mychen76",
+    "nbeerbower",
+    "nicholasKluge",
+    "nlpguy",
+    "nnethercott",
+    "numfa",
+    "oh-yeontaek",
+    "openaccess-ai-collective",
+    "openagi-project",
+    "openchat",
+    "pansophic",
+    "paulml",
+    "perlthoughts",
+    "phanerozoic",
+    "posicube",
+    "ppopiolek",
+    "psmathur",
+    "quantumaikr",
+    "raincandy-u",
+    "rhysjones",
+    "rmihaylov",
+    "roneneldan",
+    "rwitz",
+    "saishf",
+    "saltlux",
+    "saurav1199",
+    "scb10x",
+    "senseable",
+    "seyf1elislam",
+    "shadowml",
+    "shanchen",
+    "shyamieee",
+    "silvercoder45",
+    "splm",
+    "sumo43",
+    "totally-not-an-llm",
+    "tourist800",
+    "tricktreat",
+    "tyson0420",
+    "upstage",
+    "uukuguy",
+    "vaiv",
+    "vanillaOVO",
+    "vicgalle",
+    "viethq188",
+    "voidful",
+    "wang7776",
+    "wannaphong",
+    "wei123602",
+    "xformAI",
+    "xxx777xxxASD",
+    "xxyyy123",
+    "yam-peleg",
+    "yeontaek",
+    "yleo",
+    "yunconglong",
+    "zarakiquemparte",
+    "zhengr"
+  ],
+  "U_oracle": 0.07939940818168383,
+  "groups": {
+    "B0": {
+      "U": 0.08292924909513426,
+      "U_CI95": [
+        0.07047732254098232,
+        0.09696132976732914
+      ],
+      "regret": 0.003529840913450502,
+      "regret_CI95": [
+        0.0024991509514061157,
+        0.0047211425678374075
+      ]
+    },
+    "Bd": {
+      "U": 0.0823081857718323,
+      "U_CI95": [
+        0.06984521372439881,
+        0.09612464347820618
+      ],
+      "regret": 0.0029087775901485203,
+      "regret_CI95": [
+        0.002201197787442255,
+        0.0037036993361697816
+      ]
+    },
+    "P_A1": {
+      "U": 0.08269025763907883,
+      "U_CI95": [
+        0.07025943937635808,
+        0.09655282340103709
+      ],
+      "regret": 0.003290849457395056,
+      "regret_CI95": [
+        0.002486493838108444,
+        0.0041438877935113805
+      ]
+    },
+    "P_A2": {
+      "U": 0.08298663849083178,
+      "U_CI95": [
+        0.07053636286450127,
+        0.09707970522290661
+      ],
+      "regret": 0.003587230309148027,
+      "regret_CI95": [
+        0.002535353440061886,
+        0.004805418502341171
+      ]
+    },
+    "P_A3": {
+      "U": 0.08311949887265212,
+      "U_CI95": [
+        0.07074453700122327,
+        0.09709578211526304
+      ],
+      "regret": 0.0037200906909683243,
+      "regret_CI95": [
+        0.0026563035568846808,
+        0.004926152426234973
+      ]
+    },
+    "P_A4": {
+      "U": 0.08269182995128971,
+      "U_CI95": [
+        0.07006087599802518,
+        0.09667687883447638
+      ],
+      "regret": 0.0032924217696059473,
+      "regret_CI95": [
+        0.0022900530812602397,
+        0.004484293387169299
+      ]
+    },
+    "P_A5": {
+      "U": 0.08266824526812634,
+      "U_CI95": [
+        0.0699334794011377,
+        0.0967699400634585
+      ],
+      "regret": 0.0032688370864425807,
+      "regret_CI95": [
+        0.002327022072118816,
+        0.00442291424923664
+      ]
+    },
+    "P_B1": {
+      "U": 0.08298978311525358,
+      "U_CI95": [
+        0.07050112341707467,
+        0.09711374578227243
+      ],
+      "regret": 0.00359037493356981,
+      "regret_CI95": [
+        0.0025549680348927505,
+        0.004794962626138742
+      ]
+    },
+    "P_B2": {
+      "U": 0.08343081669040853,
+      "U_CI95": [
+        0.07068199828303505,
+        0.09764339880441383
+      ],
+      "regret": 0.0040314085087247604,
+      "regret_CI95": [
+        0.0028928775829158817,
+        0.005372315669977955
+      ]
+    },
+    "P_B3": {
+      "U": 0.08294104143671598,
+      "U_CI95": [
+        0.07049530586189437,
+        0.0970020526535912
+      ],
+      "regret": 0.0035416332550321852,
+      "regret_CI95": [
+        0.0025099409439533586,
+        0.004721004990518958
+      ]
+    },
+    "P_B4": {
+      "U": 0.08276887324962338,
+      "U_CI95": [
+        0.07040336490536254,
+        0.09687728967965716
+      ],
+      "regret": 0.003369465067939611,
+      "regret_CI95": [
+        0.0023881064015119336,
+        0.004479615758341902
+      ]
+    },
+    "P_B5": {
+      "U": 0.08274528856646002,
+      "U_CI95": [
+        0.07023410549586011,
+        0.09672125734662872
+      ],
+      "regret": 0.003345880384776244,
+      "regret_CI95": [
+        0.0023403081103008463,
+        0.004520515529727706
+      ]
+    },
+    "P_B6": {
+      "U": 0.0823081857718323,
+      "U_CI95": [
+        0.06987966701571997,
+        0.0962259790001981
+      ],
+      "regret": 0.002908777590148521,
+      "regret_CI95": [
+        0.0021704394298166993,
+        0.0037594181501432356
+      ]
+    },
+    "P_B7": {
+      "U": 0.08294339990503229,
+      "U_CI95": [
+        0.07046285726864211,
+        0.09711634009742044
+      ],
+      "regret": 0.003543991723348522,
+      "regret_CI95": [
+        0.002527413263396886,
+        0.0047523922730288715
+      ]
+    },
+    "P_C1": {
+      "U": 0.08308176337959075,
+      "U_CI95": [
+        0.07054298622968967,
+        0.09724226265161022
+      ],
+      "regret": 0.003682355197906938,
+      "regret_CI95": [
+        0.0026279822831860047,
+        0.004957657632160706
+      ]
+    },
+    "P_C2": {
+      "U": 0.08313050505812834,
+      "U_CI95": [
+        0.07033512655540985,
+        0.09732854328418293
+      ],
+      "regret": 0.003731096876444562,
+      "regret_CI95": [
+        0.00257910302732993,
+        0.005091992056678712
+      ]
+    },
+    "P_C3": {
+      "U": 0.08280503643047389,
+      "U_CI95": [
+        0.07000252356109848,
+        0.09692265088694127
+      ],
+      "regret": 0.003405628248790106,
+      "regret_CI95": [
+        0.002443176636698394,
+        0.004575526803206262
+      ]
+    },
+    "P_C4": {
+      "U": 0.08273506853708924,
+      "U_CI95": [
+        0.069939296956318,
+        0.0969261885894158
+      ],
+      "regret": 0.0033356603554054523,
+      "regret_CI95": [
+        0.002362202557837504,
+        0.004497677694864515
+      ]
+    },
+    "P_D1": {
+      "U": 0.08290802288028727,
+      "U_CI95": [
+        0.07040208740169122,
+        0.09695099181454261
+      ],
+      "regret": 0.0035086146986034717,
+      "regret_CI95": [
+        0.002519512394537159,
+        0.004682365417936312
+      ]
+    },
+    "P_D2": {
+      "U": 0.08281132567931744,
+      "U_CI95": [
+        0.0704256327770493,
+        0.09707113612135733
+      ],
+      "regret": 0.003411917497633671,
+      "regret_CI95": [
+        0.002358271777310274,
+        0.00469742030735559
+      ]
+    },
+    "P_D3": {
+      "U": 0.08329638399637733,
+      "U_CI95": [
+        0.07052789203246508,
+        0.097448392782458
+      ],
+      "regret": 0.0038969758146935726,
+      "regret_CI95": [
+        0.002730162922991292,
+        0.005317933321383758
+      ]
+    },
+    "P_D4": {
+      "U": 0.08334984261154767,
+      "U_CI95": [
+        0.07087486202960343,
+        0.09758042770036754
+      ],
+      "regret": 0.00395043442986387,
+      "regret_CI95": [
+        0.002848833187108297,
+        0.005145431017946378
+      ]
+    },
+    "Q_C1": {
+      "U": 0.08201023260786842,
+      "U_CI95": [
+        0.06961866318871208,
+        0.09573203711914663
+      ],
+      "regret": 0.00261082442618466,
+      "regret_CI95": [
+        0.0020188292248815264,
+        0.0032918321525268607
+      ]
+    },
+    "Q_C2": {
+      "U": 0.08223979019065854,
+      "U_CI95": [
+        0.0695893592198816,
+        0.09628610028836206
+      ],
+      "regret": 0.0028403820089747582,
+      "regret_CI95": [
+        0.002001474828853815,
+        0.0038177509331672956
+      ]
+    },
+    "Q_C3": {
+      "U": 0.08239073216290405,
+      "U_CI95": [
+        0.06963454354204207,
+        0.0962729321735959
+      ],
+      "regret": 0.002991323981220303,
+      "regret_CI95": [
+        0.0021595118599510056,
+        0.004030661660424586
+      ]
+    },
+    "Q_C4": {
+      "U": 0.08239230447511495,
+      "U_CI95": [
+        0.06967890240029186,
+        0.09639197586186288
+      ],
+      "regret": 0.002992896293431194,
+      "regret_CI95": [
+        0.002172896167646217,
+        0.003998468567906588
+      ]
+    },
+    "Q_D1": {
+      "U": 0.08204875425703526,
+      "U_CI95": [
+        0.06968356037521659,
+        0.09584298339952764
+      ],
+      "regret": 0.0026493460753514906,
+      "regret_CI95": [
+        0.002004639107178233,
+        0.003341301025462022
+      ]
+    },
+    "Q_D2": {
+      "U": 0.0823797259774278,
+      "U_CI95": [
+        0.06994320808294262,
+        0.09628055788781863
+      ],
+      "regret": 0.002980317795744065,
+      "regret_CI95": [
+        0.002282958022408593,
+        0.0038372869123876143
+      ]
+    },
+    "Q_D3": {
+      "U": 0.0822429348150803,
+      "U_CI95": [
+        0.06953894695961979,
+        0.09617998886802945
+      ],
+      "regret": 0.00284352663339654,
+      "regret_CI95": [
+        0.0020148984443542975,
+        0.003915902522932172
+      ]
+    },
+    "Q_D4": {
+      "U": 0.0823294119866793,
+      "U_CI95": [
+        0.06997119524029653,
+        0.09629694924261714
+      ],
+      "regret": 0.0029300038049955503,
+      "regret_CI95": [
+        0.002187066631446872,
+        0.003725790322732801
+      ]
+    },
+    "J": {
+      "U": 0.08241588915827834,
+      "U_CI95": [
+        0.06978212469693681,
+        0.09649763524243478
+      ],
+      "regret": 0.0030164809765945606,
+      "regret_CI95": [
+        0.0022411148636962545,
+        0.003995284635679536
+      ]
+    },
+    "S0": {
+      "U": 0.08273506853708924,
+      "U_CI95": [
+        0.069939296956318,
+        0.0969261885894158
+      ],
+      "regret": 0.0033356603554054523,
+      "regret_CI95": [
+        0.002362202557837504,
+        0.004497677694864515
+      ]
+    },
+    "Sd": {
+      "U": 0.08239230447511495,
+      "U_CI95": [
+        0.06967890240029186,
+        0.09639197586186288
+      ],
+      "regret": 0.002992896293431194,
+      "regret_CI95": [
+        0.002172896167646217,
+        0.003998468567906588
+      ]
+    }
+  },
+  "contrasts": [
+    {
+      "id": "P_A1",
+      "method": "P_A1",
+      "baseline": "B0",
+      "metric": "A1",
+      "D": 0.00023899145605544607,
+      "D_CI95": [
+        -0.0003648157407320053,
+        0.0012220796659150987
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_A2",
+      "method": "P_A2",
+      "baseline": "B0",
+      "metric": "A2",
+      "D": -5.738939569752505e-05,
+      "D_CI95": [
+        -0.00032311015933811956,
+        0.00023979726606352712
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_A3",
+      "method": "P_A3",
+      "baseline": "B0",
+      "metric": "A3",
+      "D": -0.0001902497775178223,
+      "D_CI95": [
+        -0.0005542400543391106,
+        0.00014860315783184452
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_A4",
+      "method": "P_A4",
+      "baseline": "B0",
+      "metric": "A4",
+      "D": 0.0002374191438445549,
+      "D_CI95": [
+        -0.0002130876123810155,
+        0.0006918959884026245
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_A5",
+      "method": "P_A5",
+      "baseline": "B0",
+      "metric": "A5",
+      "D": 0.00026100382700792123,
+      "D_CI95": [
+        -0.0007839155605450259,
+        0.0013466854086282205
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B1",
+      "method": "P_B1",
+      "baseline": "B0",
+      "metric": "B1",
+      "D": -6.0534020119307235e-05,
+      "D_CI95": [
+        -0.00029480853954207993,
+        0.00020522605132655938
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B2",
+      "method": "P_B2",
+      "baseline": "B0",
+      "metric": "B2",
+      "D": -0.0005015675952742588,
+      "D_CI95": [
+        -0.0013436587076222552,
+        0.0001297747191064226
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B3",
+      "method": "P_B3",
+      "baseline": "B0",
+      "metric": "B3",
+      "D": -1.17923415816833e-05,
+      "D_CI95": [
+        -0.00018238821646336683,
+        0.0001714016848897651
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B4",
+      "method": "P_B4",
+      "baseline": "B0",
+      "metric": "B4",
+      "D": 0.0001603758455108912,
+      "D_CI95": [
+        -0.00015015581614009888,
+        0.0005000149369660033
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B5",
+      "method": "P_B5",
+      "baseline": "B0",
+      "metric": "B5",
+      "D": 0.000183960528674258,
+      "D_CI95": [
+        -0.00016275396772986436,
+        0.0005574043326635286
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B6",
+      "method": "P_B6",
+      "baseline": "B0",
+      "metric": "B6",
+      "D": 0.0006210633233019808,
+      "D_CI95": [
+        -3.7755146964022684e-05,
+        0.0015687941623192207
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_B7",
+      "method": "P_B7",
+      "baseline": "B0",
+      "metric": "B7",
+      "D": -1.4150809898019892e-05,
+      "D_CI95": [
+        -0.0002932755351364612,
+        0.0002791247252384406
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_C1",
+      "method": "P_C1",
+      "baseline": "B0",
+      "metric": "C1",
+      "D": -0.00015251428445643592,
+      "D_CI95": [
+        -0.0007099382710226002,
+        0.0003372609692361391
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_C2",
+      "method": "P_C2",
+      "baseline": "B0",
+      "metric": "C2",
+      "D": -0.0002012559629940598,
+      "D_CI95": [
+        -0.0010550608013131949,
+        0.0004693548488536268
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_C3",
+      "method": "P_C3",
+      "baseline": "B0",
+      "metric": "C3",
+      "D": 0.00012421266466039607,
+      "D_CI95": [
+        -0.0008648699855032816,
+        0.0012060027735587397
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_C4",
+      "method": "P_C4",
+      "baseline": "B0",
+      "metric": "C4",
+      "D": 0.00019418055804504945,
+      "D_CI95": [
+        -0.0009638470391788756,
+        0.001419365540576658
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_D1",
+      "method": "P_D1",
+      "baseline": "B0",
+      "metric": "D1",
+      "D": 2.12262148470301e-05,
+      "D_CI95": [
+        -0.0005952184413354591,
+        0.0007171119454847914
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_D2",
+      "method": "P_D2",
+      "baseline": "B0",
+      "metric": "D2",
+      "D": 0.00011792341581683167,
+      "D_CI95": [
+        -0.0004851565865730831,
+        0.0007768401555960158
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_D3",
+      "method": "P_D3",
+      "baseline": "B0",
+      "metric": "D3",
+      "D": -0.0003671349012430701,
+      "D_CI95": [
+        -0.0011973747103014754,
+        0.00022171567563827977
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "P_D4",
+      "method": "P_D4",
+      "baseline": "B0",
+      "metric": "D4",
+      "D": -0.0004205935164133676,
+      "D_CI95": [
+        -0.0010386301387093832,
+        0.0001485835039292073
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_C1",
+      "method": "Q_C1",
+      "baseline": "Bd",
+      "metric": "C1",
+      "D": 0.0002979531639638611,
+      "D_CI95": [
+        -0.00013050191350396173,
+        0.000845137467256597
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_C2",
+      "method": "Q_C2",
+      "baseline": "Bd",
+      "metric": "C2",
+      "D": 6.839558117376228e-05,
+      "D_CI95": [
+        -0.000848596554120559,
+        0.0008223782480039488
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_C3",
+      "method": "Q_C3",
+      "baseline": "Bd",
+      "metric": "C3",
+      "D": -8.254639107178275e-05,
+      "D_CI95": [
+        -0.0009803759712958683,
+        0.000602549347018736
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_C4",
+      "method": "Q_C4",
+      "baseline": "Bd",
+      "metric": "C4",
+      "D": -8.411870328267373e-05,
+      "D_CI95": [
+        -0.0010267395276145192,
+        0.0007312431014801738
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_D1",
+      "method": "Q_D1",
+      "baseline": "Bd",
+      "metric": "D1",
+      "D": 0.00025943151479702984,
+      "D_CI95": [
+        -0.00016196781162441918,
+        0.0007405787052323394
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_D2",
+      "method": "Q_D2",
+      "baseline": "Bd",
+      "metric": "D2",
+      "D": -7.154020559554479e-05,
+      "D_CI95": [
+        -0.0008813203020097295,
+        0.0006463382420920554
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_D3",
+      "method": "Q_D3",
+      "baseline": "Bd",
+      "metric": "D3",
+      "D": 6.525095675198031e-05,
+      "D_CI95": [
+        -0.000871159234346846,
+        0.0008120992569252494
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Q_D4",
+      "method": "Q_D4",
+      "baseline": "Bd",
+      "metric": "D4",
+      "D": -2.1226214847029734e-05,
+      "D_CI95": [
+        -0.0005047122196960406,
+        0.0004434313512765601
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "J",
+      "method": "J",
+      "baseline": "Bd",
+      "metric": null,
+      "D": -0.0001077033864460403,
+      "D_CI95": [
+        -0.0010928356021798545,
+        0.0007618638817872778
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "S0",
+      "method": "S0",
+      "baseline": "B0",
+      "metric": null,
+      "D": 0.00019418055804504945,
+      "D_CI95": [
+        -0.0009638470391788756,
+        0.001419365540576658
+      ],
+      "baseline_headroom": 0.003529840913450502,
+      "status": "DESCRIPTIVE_ONLY"
+    },
+    {
+      "id": "Sd",
+      "method": "Sd",
+      "baseline": "Bd",
+      "metric": null,
+      "D": -8.411870328267373e-05,
+      "D_CI95": [
+        -0.0010267395276145192,
+        0.0007312431014801738
+      ],
+      "baseline_headroom": 0.0029087775901485203,
+      "status": "DESCRIPTIVE_ONLY"
+    }
+  ],
+  "scope": "unadjusted descriptive paired case-org intervals; no binary decision-success threshold"
+}

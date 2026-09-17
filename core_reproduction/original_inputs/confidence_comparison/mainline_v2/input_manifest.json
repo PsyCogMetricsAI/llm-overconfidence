@@ -1,0 +1,14 @@
+{
+  "manifest_file": "input_manifest.sha256",
+  "manifest_sha256": "4db8b8993d29a8d3cc787381887e9bb5a32fe1665edebf124b7751f50475ab5e",
+  "verification": "INPUT_STABILITY.json",
+  "metadata_snapshot_policy": "reuse old CV frozen input_scan and eligibility after every original ARC/HS file SHA comparison; do not decode target risks and do not include new live-directory files",
+  "n_verified_files": 13621,
+  "all_pass": true,
+  "cohort_manifest_file": "cohort_manifest.csv",
+  "cohort_sha256": "9697ff48b9872862ca95e0720a7ffc46cf9c1a5506b551811cecea7943ad4db7",
+  "fit_identity_file": "FIT_REUSE_AUDIT.json",
+  "fit_identity_sha256": "6d6a011b7fbf9d021d4f70e78d4d27315b006e5fe8c58f2a0f405a94fe20a311",
+  "modeling_code_status": "NOT_IMPLEMENTED; V-P pending",
+  "freeze_rule": "V-P pins final A1_OUTPUT_HASHES.json; modifications require review; source/old artifacts remain read-only"
+}

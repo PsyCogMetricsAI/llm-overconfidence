@@ -1,0 +1,13 @@
+{
+  "files": {
+    "protocol.json": "a724905385183795570cdc65a5179f04a8e1efaafa46af402e90fa73597c8767",
+    "feature_contract.json": "9a40549ff57e325bd7e76b880e99ec9390212e4b71192d42c5386655bfa629ef",
+    "access_contract.json": "dda711d850fa7940e474556a670f3762e88415286e490745457f2e493e14078f",
+    "cohort_contract.json": "c06b6a261fa3c90ff8f6c7bda10754555c5805cc024d88805b2a7ae7115ab67d",
+    "cohort_manifest.csv": "ddaac2cb72ef028a445e078201fdeb31fb1eace4ce19478b6587d364db95411a",
+    "cohort_exclusions.csv": "58b1b7b7ad8a658893463fd021d81ff8c17e9a24ca6a929688e0bb14d7fe1610",
+    "split_manifest.json": "0682e0059e91c9bef23cc7354cbe8af988f6728a3a1d55f2b73f0536b3faed31",
+    "input_manifest.sha256": "4db8b8993d29a8d3cc787381887e9bb5a32fe1665edebf124b7751f50475ab5e",
+    "input_manifest.json": "1407add30b14eded1c41a89762ef42ac357a1842cf669353ac1b41744e91cc69"
+  }
+}

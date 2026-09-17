@@ -1,0 +1,129 @@
+{
+  "repository": "PsyCogMetricsAI/llm-overconfidence",
+  "generated_utc": "2026-09-17T00:22:10.527680+00:00",
+  "scope": "Study evidence and public computational paths; numerical reference files are authoritative.",
+  "status": "Scientific analyses and scoped public reproduction checks independently verified.",
+  "results": [
+    {
+      "id": "T1",
+      "title": "Signed mean confidence–accuracy gap and mean-preserving construction",
+      "code": [
+        "historical_reproduction/code/check_algebra.py",
+        "analysis_assets/make_revision_figures.py"
+      ],
+      "reference_outputs": [
+        "confidence_risk_audit_20260914/theory/PROPOSITIONS.md"
+      ],
+      "evidence_scope": "Algebra and possibility example; no claim of empirical prevalence or latent-construct absence."
+    },
+    {
+      "id": "T2",
+      "title": "Core source: 6706 candidate models, 1168 ARC items; 6701 evaluated models from 1330 organizations",
+      "code": [
+        "core_reproduction/run_core.py",
+        "core_reproduction/corrected_mode.py"
+      ],
+      "reference_outputs": [
+        "core_reproduction/corrected_inputs/CORRECTED_CORE_ARRAYS.identity.json",
+        "core_reproduction/corrected_inputs/CORRECTED_FEATURE_IDENTITIES.json",
+        "confidence_comparison/risk_metrics_v1/evaluation_cohort.csv"
+      ],
+      "evidence_scope": "Source quantities independently checked. Public raw arrays and all 50 feature tables reproduced exactly; the independent source audit checked 125 contexts and 55 reference sets without reading target labels."
+    },
+    {
+      "id": "T3",
+      "title": "All 31 primary and 31 secondary comparisons; 190 predictive effects",
+      "code": [
+        "core_reproduction/run_core.py",
+        "core_reproduction/original_inputs/confidence_comparison/risk_metrics_v1/code/evaluate.py"
+      ],
+      "reference_outputs": [
+        "confidence_comparison/risk_metrics_v1/results/PRIMARY_RESULTS.json",
+        "confidence_comparison/risk_metrics_v1/results/SECONDARY_RESULTS.json",
+        "confidence_comparison/risk_metrics_v1/CANDIDATE_MATRIX.csv"
+      ],
+      "evidence_scope": "The numerical results were independently checked. Between-easiness-bin confidence-bias variance meets the expanded-baseline criterion; easiness-weighted confident-error mass does not meet that criterion. All comparisons remain visible. Two bounded public final-fit checks reproduced held-out predictions exactly; these integration checks do not cover a complete nested search."
+    },
+    {
+      "id": "T4",
+      "title": "Descriptor availability and source repeatability",
+      "code": [
+        "core_reproduction/original_inputs/confidence_comparison/risk_metrics_v1/code/assemble_features.py"
+      ],
+      "reference_outputs": [
+        "confidence_comparison/risk_metrics_v1/features/source_quality.json"
+      ],
+      "evidence_scope": "Source summaries from the analysis; reference-population and cohort dependent."
+    },
+    {
+      "id": "T5",
+      "title": "Descriptive model selection",
+      "code": [
+        "core_reproduction/original_inputs/confidence_comparison/risk_metrics_v1/code/evaluate.py"
+      ],
+      "reference_outputs": [
+        "confidence_comparison/risk_metrics_v1/results/selection_results.json"
+      ],
+      "evidence_scope": "Paired case-organization descriptive intervals; no binary decision-success threshold or measured deployment benefit."
+    },
+    {
+      "id": "T6",
+      "title": "Exploratory slope and five-summary/expanded-summary comparisons",
+      "code": [
+        "historical_reproduction/"
+      ],
+      "reference_outputs": [
+        "reference_originals/corrected_historical/initial/REFERENCE_MANIFEST.json",
+        "reference_originals/corrected_historical/expanded/REFERENCE_MANIFEST.json",
+        "reference_originals/corrected_historical/slope_check2.json"
+      ],
+      "evidence_scope": "Analyses and their public runtime implementations independently verified. These are retrospective exploratory analyses with the documented task overlap."
+    },
+    {
+      "id": "T7",
+      "title": "Full-panel joint item-response supporting analysis: 6717 ARC, 6720 HellaSwag, 6716 shared models",
+      "code": [
+        "joint_reproduction/cold.py",
+        "joint_reproduction/analyze.py"
+      ],
+      "reference_outputs": [
+        "joint_reproduction/ARTIFACTS.json",
+        "joint_reproduction/input_contract/CONTRACT.json",
+        "joint_reproduction/reference_results/analyze_joint_report.json"
+      ],
+      "evidence_scope": "Full-panel supporting analysis. Full fits and statistics independently checked. Both public cold matrices reconstructed exactly; public bounded pilot/validation checks are separate from full fitting."
+    },
+    {
+      "id": "T8",
+      "title": "Standalone analysis figures and tables",
+      "code": [
+        "analysis_assets/make_revision_figures.py",
+        "analysis_assets/make_supplement_tables.py",
+        "analysis_assets/check_assets.py",
+        "tools/export_candidate_matrix.py"
+      ],
+      "reference_outputs": [
+        "analysis_assets/FIGURE_GENERATION.json",
+        "analysis_assets/corrected_cohort_metadata.csv",
+        "analysis_assets/supplement_results_table.tex",
+        "analysis_assets/supplement_stability_table.tex",
+        "analysis_assets/supplement_secondary_table.tex",
+        "analysis_assets/supplement_selection_table.tex"
+      ],
+      "evidence_scope": "Standalone figure and table renderers consume the numerical reference results. The asset checker validates generated outputs and their inputs; scientific-result verification is documented separately."
+    },
+    {
+      "id": "T9",
+      "title": "Computational cost accounting",
+      "code": [
+        "core_reproduction/original_inputs/confidence_comparison/risk_metrics_v1/code/cost_report.py",
+        "core_reproduction/original_inputs/confidence_comparison/risk_metrics_v1/code/warm_costs.py"
+      ],
+      "reference_outputs": [
+        "confidence_comparison/risk_metrics_v1/results/cost_report.json",
+        "confidence_comparison/risk_metrics_v1/cost/warm_summary.json"
+      ],
+      "evidence_scope": "Measured event totals and all 9,900 warm measurements were independently checked. Complete acquisition-to-results cold time remains unmeasured; the disk count is a total result-tree snapshot, not a new-byte delta."
+    }
+  ]
+}

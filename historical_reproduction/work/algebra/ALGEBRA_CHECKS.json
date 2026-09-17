@@ -1,0 +1,29 @@
+{
+  "status": "REFERENCE",
+  "scope": "Algebraic and finite-case validation, not empirical reproduction",
+  "symbolic_fisher_determinant": "N*cF*s**2*(N*S2 - S1**2)*(cF*cS - cFS**2)/sigma**6",
+  "mean_gap_identity": true,
+  "partition_max_abs_error": 1.6653345369377348e-16,
+  "joint_logit_invariance_max_abs_error": 6.572520305780927e-14,
+  "controlled_residual_scaling_max_abs_error": 3.219646771412954e-14,
+  "constructed_pair": [
+    {
+      "accuracy": 0.8,
+      "mean_confidence": 0.8,
+      "signed_gap": 0.0,
+      "top_half_risk": 0.0
+    },
+    {
+      "accuracy": 0.8,
+      "mean_confidence": 0.8,
+      "signed_gap": 0.0,
+      "top_half_risk": 0.4
+    }
+  ],
+  "finite_intersection_cases": 5644,
+  "versions": {
+    "python": "3.12.11 (main, Oct  7 2025, 15:34:39) [Clang 20.1.4 ]",
+    "numpy": "2.5.0",
+    "sympy": "1.14.0"
+  }
+}

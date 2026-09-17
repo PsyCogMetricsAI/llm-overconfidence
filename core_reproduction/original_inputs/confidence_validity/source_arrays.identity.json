@@ -1,0 +1,91 @@
+{
+ "schema": "llm-overconfidence/array-identity/1",
+ "recorded_utc": "2026-09-16T19:59:19Z",
+ "source": "confidence_validity/source_arrays.npz (archived original-input baseline; withheld from the public release). The identity below was generated from the copy whose sha256 is recorded here.",
+ "source_sha256": "dab55008db28dbcb3d39273f6dbef9ae3775dedf44c48485a259b8dd29584756",
+ "source_bytes": 117410167,
+ "canonicalisation": "sha256(dtype.str | 0x00 | shape as little-endian int64 | C-order contiguous bytes); big-endian numeric arrays converted to little-endian; npz container framing/compression never compared",
+ "exact_zip_bytes_compared": false,
+ "keys": [
+  "ell",
+  "c",
+  "y",
+  "valid",
+  "item_ids",
+  "model_ids",
+  "org_ids",
+  "source_half"
+ ],
+ "n_models": 6706,
+ "n_items": 1172,
+ "arrays": {
+  "ell": {
+   "shape": [
+    6706,
+    1172
+   ],
+   "dtype": "<f8",
+   "digest": "73cda04f109a91295efdddac48c0b5f9beef0aae81054324be4dffb992000889",
+   "nan": 15151,
+   "posinf": 0,
+   "neginf": 0
+  },
+  "c": {
+   "shape": [
+    6706,
+    1172
+   ],
+   "dtype": "<f8",
+   "digest": "4976a32d653fdf2582ac6f0889b27b1d26d73d0976d87c55d0ec1684c1b6bc08",
+   "nan": 15151,
+   "posinf": 0,
+   "neginf": 0
+  },
+  "y": {
+   "shape": [
+    6706,
+    1172
+   ],
+   "dtype": "|b1",
+   "digest": "4ec4709999dd620db74bdd9905e6b08dc6ca1b0f3954ea5b63b59263cfb4f681"
+  },
+  "valid": {
+   "shape": [
+    6706,
+    1172
+   ],
+   "dtype": "|b1",
+   "digest": "3126a09372894980f85d155a7e53ce2a123dc6d763f234c237b09f506a8b2b60"
+  },
+  "item_ids": {
+   "shape": [
+    1172
+   ],
+   "dtype": "<U22",
+   "digest": "96ccc9460c4b2c01646c094cd1887a1823b852bc87c888206c65a9de086b5f9d"
+  },
+  "model_ids": {
+   "shape": [
+    6706
+   ],
+   "dtype": "<U82",
+   "digest": "71e4b0920541d9adaadde3348a94e1520fce258c61c13057ae866b8b1dc4da0c"
+  },
+  "org_ids": {
+   "shape": [
+    6706
+   ],
+   "dtype": "<U28",
+   "digest": "153cf7dd412861ae544f8981e634d55cd9d7006250a073c44f1aabe0a5645ba4"
+  },
+  "source_half": {
+   "shape": [
+    1172
+   ],
+   "dtype": "|i1",
+   "digest": "bd7d8ac189ac07ac360b92758617585e740ba319a48e1daa4fffe423212d84ff",
+   "min": 0,
+   "max": 1
+  }
+ }
+}

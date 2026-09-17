@@ -1,0 +1,93 @@
+{
+  "schema": "llm-overconfidence/item-identity-mask/1",
+  "policy_id": "FULLIRT-AMBIGUITY-POLICY-20260916",
+  "status": "REFERENCE",
+  "recorded_utc": "2026-09-16",
+  "scope": "26 item IDs (4 ARC, 22 HellaSwag) excluded wherever they occur in the 13,494-file core raw scan, following the outcome-independent ambiguity policy",
+  "rule": "for every archived member, remove every row whose item_id appears in mask_ids[bench]; keep the remaining rows in their original order and with their original values; keep scalar metadata unchanged except n_kept (= post-mask row count); add the four correction provenance scalars (correction_policy_id, correction_source_sha256, correction_n_removed, correction_removed_ids, the last being the removed IDs in file order joined by newlines); write with the byte-deterministic npz writer",
+  "mask_ids": {
+    "arc": [
+      "Mercury_SC_LBS10597",
+      "Mercury_406639",
+      "TIMSS_2003_8_pg47",
+      "Mercury_7116183"
+    ],
+    "hellaswag": [
+      "10987",
+      "15398",
+      "15571",
+      "16391",
+      "16921",
+      "18510",
+      "20945",
+      "21312",
+      "22221",
+      "23979",
+      "26229",
+      "29621",
+      "31828",
+      "32124",
+      "32260",
+      "38490",
+      "39012",
+      "39564",
+      "41827",
+      "46012",
+      "48117",
+      "48898"
+    ]
+  },
+  "per_id_file_counts": {
+    "arc": {
+      "Mercury_SC_LBS10597": 6746,
+      "Mercury_406639": 6746,
+      "TIMSS_2003_8_pg47": 323,
+      "Mercury_7116183": 323
+    },
+    "hellaswag": {
+      "10987": 6748,
+      "15398": 6748,
+      "15571": 6748,
+      "16391": 6748,
+      "16921": 6748,
+      "18510": 6748,
+      "20945": 6748,
+      "21312": 6748,
+      "22221": 6748,
+      "23979": 6748,
+      "26229": 6748,
+      "29621": 6748,
+      "31828": 6748,
+      "32124": 6748,
+      "32260": 6748,
+      "38490": 6748,
+      "39012": 6748,
+      "39564": 6748,
+      "41827": 6748,
+      "46012": 6748,
+      "48117": 6748,
+      "48898": 6748
+    }
+  },
+  "counts": {
+    "files": 13494,
+    "arc_files": 6746,
+    "hellaswag_files": 6748,
+    "masked_ids": 26,
+    "rows_removed": 162594
+  },
+  "corrected_view_reference": {
+    "role": "Corrected raw view for source recomputation",
+    "corrected_manifest_sha256": "dc56e63ac3e52ecedb24df85f38f4d0d09d7fac9605232fc61463b2157cbddb5",
+    "n_files": 13494,
+    "rows_removed": 162594,
+    "aggregate_definition": "sha256 over sorted '<bench>/<filename> <sha256 of the corrected npz>' lines",
+    "aggregate_digest": "f1a4a73c9537ba3409832c154e61c975ad60c971ed8bb4926cfc4a901f6ce650"
+  },
+  "reader_path": {
+    "tool": "tools/make_corrected_raw_view.py",
+    "usage": "python tools/make_corrected_raw_view.py --raw data_peritem_v1_20260913 --out runs/corrected_raw",
+    "verification": "python tools/make_corrected_raw_view.py --raw data_peritem_v1_20260913 --verify-against <corrected_raw> (byte-for-byte, no writes)",
+    "note": "the tool verifies every source file against RAW_INPUT_MANIFEST.json before reading it and fails closed on any source or output mismatch"
+  }
+}
