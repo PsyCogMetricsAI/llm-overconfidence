@@ -16,6 +16,24 @@ CONSTANT_LINE = f'PLAN_SHA = "{PROTOCOL_PLACEHOLDER}"'
 CHECK_BLOCK = ('    if digest(ROOT/"protocol.json") and digest(Path(pr["plan_path"])) != PLAN_SHA:\n'
                '        fail("plan", "plan SHA mismatch")\n')
 
+# Public-cohort rebinding (v1.0.2, 2026-09-18). The archived verifier hard-codes the original
+# private cohort (6666 models / 1324 organizations). The corrected public recomputation evaluates the
+# documented public cohort of 6701 models / 1330 organizations (README, docs/01), so the archived
+# cohort checks fail by construction in --public-mode. The runtime copy therefore substitutes exactly
+# three literals; every other seal check (held-out membership, configuration selection, prediction
+# identities, permitted targets) is untouched and the archived file stays byte-identical.
+ORIGINAL_COHORT = (6666, 1324)
+PUBLIC_COHORT = (6701, 1330)
+COHORT_SUBSTITUTIONS = [
+    ('    if len(all_rows) != 6666 or len(got) != len(all_rows) or got != expected:\n'
+     '        fail("cohort", f"rows={len(all_rows)} unique={len(got)} expected=6666")\n',
+     '    if len(all_rows) != 6701 or len(got) != len(all_rows) or got != expected:\n'
+     '        fail("cohort", f"rows={len(all_rows)} unique={len(got)} expected=6701")\n'),
+    ('    if int(seal["n_models"]) != 6666 or int(seal["n_orgs"]) != 1324:\n',
+     '    if int(seal["n_models"]) != 6701 or int(seal["n_orgs"]) != 1330:\n'),
+    ('"cohort_6666_1324":True', '"cohort_6701_1330":True'),
+]
+
 
 def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -36,9 +54,15 @@ def adapt_seal_verifier(text: str, *, source_sha256: str, expected_source_sha256
     checks = CHECK_BLOCK
     assert 'fail("plan", "plan SHA mismatch")' in adapted, "ARCHIVED_ASSERTION_WAS_REMOVED"
     assert adapted.count('fail("plan", "plan SHA mismatch")') == 1
+    for before, after in COHORT_SUBSTITUTIONS:
+        assert adapted.count(before) == 1, ("SEAL_VERIFIER_COHORT_LITERAL_NOT_UNIQUE", before)
+        adapted = adapted.replace(before, after, 1)
+    assert 'fail("cohort"' in adapted, "ARCHIVED_COHORT_ASSERTION_WAS_REMOVED"
     record = {"source_sha256": source_sha256,"public_protocol_sha256":public_protocol_sha256,
               "adapted_sha256":sha256_bytes(adapted.encode()),"adapted_bytes":len(adapted.encode()),
-              "scope":"Public protocol hash substitution; all scientific seal checks retained"}
+              "scope":"Public protocol hash substitution and public-cohort rebinding; all other seal checks retained",
+              "public_cohort_rebinding":[{"before":b,"after":a,"original_cohort":list(ORIGINAL_COHORT),
+                                         "public_cohort":list(PUBLIC_COHORT)} for b,a in COHORT_SUBSTITUTIONS]}
     return adapted, record
 
 

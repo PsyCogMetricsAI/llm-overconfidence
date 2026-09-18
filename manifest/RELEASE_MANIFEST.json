@@ -9,7 +9,7 @@
  ],
  "totals": {
   "files": 383,
-  "bytes": 103789746
+  "bytes": 103791876
  },
  "files": [
   {
@@ -20,7 +20,7 @@
   {
    "path": "CITATION.cff",
    "bytes": 928,
-   "sha256": "bce3173004418fc7173ebe73a0cad4fdbe97d5e8a6febd86456c47d17ec75b75"
+   "sha256": "380b3be8b6cad4ef37716fc443c4eca9ecd481ac4134ca3bc3f813e663cc8485"
   },
   {
    "path": "LICENSE",
@@ -1229,8 +1229,8 @@
   },
   {
    "path": "docs/03_FULL_COLD_REPRODUCTION.md",
-   "bytes": 7150,
-   "sha256": "9003c5fae0384f66fb6c12116890b74c3c32714ecbf6967f21a3f20a4971f54d"
+   "bytes": 7521,
+   "sha256": "697738b6048ee4a6b97a29664ed0a89756ef3428b95e0f44fbb67b8d1104ad45"
   },
   {
    "path": "docs/04_REQUIRED_INPUTS.md",
@@ -1804,8 +1804,8 @@
   },
   {
    "path": "tools/adapt_public_seal_verifier.py",
-   "bytes": 4738,
-   "sha256": "a7a6a56adec312abf9bc9ac3bfc4751a431e8a449f5517304f452bd35c7729b7"
+   "bytes": 6497,
+   "sha256": "b9ea288ed9754e5637b5a6c59d5bb9266805143b0bd8697fe3b315b9bdeb7d02"
   },
   {
    "path": "tools/annotate_corrected_cost_scope.py",

@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "If you use these reproducibility materials, cite the paper recorded here and/or this repository (v1.0.1). No DOI is recorded; please cite the published version of the paper once it exists."
+message: "If you use these reproducibility materials, cite the paper recorded here and/or this repository (v1.0.2). No DOI is recorded; please cite the published version of the paper once it exists."
 title: "LLM Overconfidence Is Not a Measurable, Comparable Trait"
 type: software
 repository-code: "https://github.com/PsyCogMetricsAI/llm-overconfidence"
-version: "1.0.1"
-date-released: 2026-09-17
+version: "1.0.2"
+date-released: 2026-09-18
 authors:
   # Four authors of submission 12392, in the order supplied by the authors.
   # ORCID iDs are not recorded: the authors have not supplied them yet.
